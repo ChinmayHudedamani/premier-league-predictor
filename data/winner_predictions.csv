@@ -1,0 +1,21 @@
+team,title_win_prob_%,top4_prob_%,relegation_prob_%,avg_projected_points
+Arsenal,50.88,97.95,0.0,79.8
+Manchester City,35.39,95.3,0.0,77.1
+Liverpool,11.18,82.87,0.0,71.7
+Chelsea,0.99,29.74,0.06,61.1
+Newcastle United,0.71,27.32,0.04,60.7
+Aston Villa,0.34,19.04,0.09,58.5
+Brighton & Hove Albion,0.11,8.25,0.42,54.6
+AFC Bournemouth,0.1,7.04,0.34,54.5
+Manchester United,0.09,7.86,0.43,54.3
+Tottenham Hotspur,0.07,7.62,0.46,54.0
+Fulham,0.05,3.19,1.12,51.1
+Brentford,0.04,5.77,0.58,53.3
+Nottingham Forest,0.03,3.41,0.91,51.7
+Crystal Palace,0.01,2.62,1.39,50.6
+Everton,0.01,1.54,2.14,48.8
+West Ham United,0.0,0.41,7.14,44.3
+Wolverhampton Wanderers,0.0,0.07,17.86,39.6
+Leicester City,0.0,0.0,85.72,28.3
+Ipswich Town,0.0,0.0,83.21,29.1
+Southampton,0.0,0.0,98.09,21.3

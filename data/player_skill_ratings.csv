@@ -1,0 +1,21 @@
+id,full_name,web_name,team_name,position,now_cost,selected_by_percent,form,points_per_game,total_points,minutes,goals_scored,assists,clean_sheets,goals_conceded,yellow_cards,red_cards,saves,bonus,influence,creativity,threat,ict_index,expected_goals,expected_assists,expected_goal_involvements,expected_goals_conceded,price_m,shooting_skill,playmaking_skill,defensive_workrate,tactical_flexibility,individual_skill_index
+115,Maxim De Cuyper,De Cuyper,Brighton,Defender,45,2.6,17.0,17.0,17,77,1,1,1,0,0,0,0,2,0.0,0.0,0.0,0.0,1.47,0.21,1.68,0.29,4.5,54.4,35.25,40.0,85.0,50.1275
+123,Jack Hinshelwood,Hinshelwood,Brighton,Midfielder,60,0.9,16.0,16.0,16,63,2,0,1,0,0,0,0,3,0.0,0.0,0.0,0.0,1.41,0.02,1.43,0.19,6.0,78.2,0.5,10.0,80.0,41.045
+565,Mamadou Sangaré,M.Sangaré,Brentford,Midfielder,55,4.3,14.0,14.0,14,75,0,2,1,0,0,0,0,3,0.0,0.0,0.0,0.0,0.05,0.33,0.38,0.47,5.5,1.0,68.25,10.0,70.0,36.2375
+399,Rayan Cherki,Cherki,Man City,Midfielder,75,8.5,8.0,8.0,8,27,0,2,0,0,0,0,0,1,0.0,0.0,0.0,0.0,0.0,0.47,0.47,0.08,7.5,0.0,71.75,10.0,40.0,32.6125
+388,Marc Guéhi,Guéhi,Man City,Defender,60,17.5,10.0,10.0,10,90,1,0,0,1,0,0,0,2,0.0,0.0,0.0,0.0,0.89,0.31,1.2,0.63,6.0,42.8,7.75,40.0,50.0,31.1925
+279,Semi Ajayi,Ajayi,Hull City,Defender,40,1.3,14.0,14.0,14,63,1,0,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.52,0.0,0.52,0.86,4.0,35.4,0.0,40.0,70.0,28.89
+88,Michael Kayode,Kayode,Brentford,Defender,45,4.2,13.0,13.0,13,75,1,0,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.5,0.0,0.5,0.47,4.5,35.0,0.0,40.0,65.0,28.0
+586,Nobel Mendy,Mendy,Hull City,Defender,40,1.6,15.0,15.0,15,63,1,0,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.28,0.0,0.28,0.86,4.0,30.6,0.0,40.0,75.0,27.96
+10,Benjamin White,White,Arsenal,Defender,55,5.1,11.0,11.0,11,90,0,1,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.18,0.21,0.39,0.2,5.5,3.5999999999999996,35.25,40.0,55.0,27.847499999999997
+368,Dominik Szoboszlai,Szoboszlai,Liverpool,Midfielder,70,41.9,8.0,8.0,8,90,1,0,0,2,0,0,0,1,0.0,0.0,0.0,0.0,0.85,0.27,1.12,1.58,7.0,42.0,6.75,10.0,40.0,24.5625
+8,Riccardo Calafiori,Calafiori,Arsenal,Defender,55,40.3,9.0,9.0,9,80,0,1,1,0,0,0,0,0,0.0,0.0,0.0,0.0,0.04,0.09,0.13,0.06,5.5,0.8,32.25,40.0,45.0,24.3175
+86,Keane Lewis-Potter,Lewis-Potter,Brentford,Midfielder,55,0.6,10.0,10.0,10,90,1,0,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.77,0.12,0.89,0.57,5.5,40.4,3.0,10.0,50.0,24.189999999999998
+391,Joško Gvardiol,Gvardiol,Man City,Defender,55,11.5,9.0,9.0,9,90,1,0,0,1,0,0,0,1,0.0,0.0,0.0,0.0,0.19,0.05,0.24,0.63,5.5,28.8,1.25,40.0,45.0,23.2675
+316,Emersonn Correia da Silva,Emersonn,Ipswich Town,Forward,55,0.8,9.0,9.0,9,65,1,0,0,1,0,0,0,3,0.0,0.0,0.0,0.0,0.82,0.06,0.88,0.63,5.5,41.4,1.5,10.0,45.0,23.265
+237,Iliman Ndiaye,Ndiaye,Everton,Midfielder,60,16.0,9.0,9.0,9,90,0,1,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.24,0.32,0.56,1.96,6.0,4.8,38.0,10.0,45.0,23.229999999999997
+367,Cody Gakpo,Gakpo,Liverpool,Midfielder,70,3.8,12.0,12.0,12,90,1,0,0,2,0,0,0,3,0.0,0.0,0.0,0.0,0.3,0.15,0.45,1.58,7.0,31.0,3.75,10.0,60.0,22.6625
+12,Bukayo Saka,Saka,Arsenal,Midfielder,95,9.9,9.0,9.0,9,67,1,0,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.64,0.08,0.72,0.06,9.5,37.8,2.0,10.0,45.0,22.18
+464,Yoane Wissa,Wissa,Newcastle,Forward,60,1.9,4.0,4.0,4,90,0,1,0,1,1,0,0,0,0.0,0.0,0.0,0.0,1.0,0.02,1.02,2.19,6.0,20.0,30.5,10.0,20.0,22.174999999999997
+127,Diego Gómez Amarilla,Gomez,Brighton,Midfielder,50,3.9,6.0,6.0,6,85,0,1,1,0,0,0,0,0,0.0,0.0,0.0,0.0,0.18,0.48,0.66,0.29,5.0,3.5999999999999996,42.0,10.0,30.0,21.96
+98,Vitaly Janelt,Janelt,Brentford,Midfielder,50,0.2,9.0,9.0,9,90,1,0,1,0,1,0,0,0,0.0,0.0,0.0,0.0,0.39,0.17,0.56,0.57,5.0,32.8,4.25,10.0,45.0,21.217499999999998

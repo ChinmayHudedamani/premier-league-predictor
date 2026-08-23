@@ -1,0 +1,21 @@
+id,full_name,web_name,team_name,position,now_cost,selected_by_percent,form,points_per_game,total_points,minutes,goals_scored,assists,clean_sheets,goals_conceded,yellow_cards,red_cards,saves,bonus,influence,creativity,threat,ict_index,expected_goals,expected_assists,expected_goal_involvements,expected_goals_conceded,price_m,predicted_market_value_eur_m,predicted_weekly_salary_k
+411,Erling Haaland,Haaland,Man City,Forward,155,69.1,2.0,2.0,2,90,0,0,0,1,0,0,0,0,0.0,0.0,0.0,0.0,0.85,0.02,0.87,0.63,15.5,119.4,279.0
+379,Alexander Isak,Isak,Liverpool,Forward,90,17.0,2.0,2.0,2,90,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,1.09,0.01,1.1,1.58,9.0,84.2,201.0
+106,Igor Thiago Nascimento Rodrigues,Thiago,Brentford,Forward,80,17.2,0.0,0.0,0,82,0,0,1,0,0,0,0,0,0.0,0.0,0.0,0.0,1.0,0.08,1.08,0.5,8.0,77.4,170.0
+426,Bruno Borges Fernandes,B.Fernandes,Man Utd,Midfielder,120,50.9,2.0,2.0,2,90,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,0.08,0.26,0.34,1.01,12.0,76.0,183.0
+12,Bukayo Saka,Saka,Arsenal,Midfielder,95,9.9,9.0,9.0,9,67,1,0,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.64,0.08,0.72,0.06,9.5,71.4,233.0
+123,Jack Hinshelwood,Hinshelwood,Brighton,Midfielder,60,0.9,16.0,16.0,16,63,2,0,1,0,0,0,0,3,0.0,0.0,0.0,0.0,1.41,0.02,1.43,0.19,6.0,69.5,289.0
+368,Dominik Szoboszlai,Szoboszlai,Liverpool,Midfielder,70,41.9,8.0,8.0,8,90,1,0,0,2,0,0,0,1,0.0,0.0,0.0,0.0,0.85,0.27,1.12,1.58,7.0,67.4,216.0
+224,Eddie Nketiah,Nketiah,Crystal Palace,Forward,55,0.5,1.0,1.0,1,55,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,0.6,0.58,1.18,0.84,5.5,64.2,149.0
+464,Yoane Wissa,Wissa,Newcastle,Forward,60,1.9,4.0,4.0,4,90,0,1,0,1,1,0,0,0,0.0,0.0,0.0,0.0,1.0,0.02,1.02,2.19,6.0,63.3,171.0
+427,Bryan Mbeumo,Mbeumo,Man Utd,Midfielder,80,37.9,2.0,2.0,2,90,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,0.5,0.23,0.73,1.01,8.0,63.2,155.0
+115,Maxim De Cuyper,De Cuyper,Brighton,Defender,45,2.6,17.0,17.0,17,77,1,1,1,0,0,0,0,2,0.0,0.0,0.0,0.0,1.47,0.21,1.68,0.29,4.5,62.2,277.0
+223,Jean-Philippe Mateta,Mateta,Crystal Palace,Forward,65,5.7,2.0,2.0,2,62,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,0.7,0.02,0.72,0.98,6.5,59.0,146.0
+388,Marc Guéhi,Guéhi,Man City,Defender,60,17.5,10.0,10.0,10,90,1,0,0,1,0,0,0,2,0.0,0.0,0.0,0.0,0.89,0.31,1.2,0.63,6.0,57.0,209.0
+316,Emersonn Correia da Silva,Emersonn,Ipswich Town,Forward,55,0.8,9.0,9.0,9,65,1,0,0,1,0,0,0,3,0.0,0.0,0.0,0.0,0.82,0.06,0.88,0.63,5.5,56.6,201.0
+428,Matheus Santos Carneiro da Cunha,Cunha,Man Utd,Midfielder,80,10.0,2.0,2.0,2,79,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,0.24,0.21,0.45,1.01,8.0,56.2,140.0
+26,Kai Havertz,Havertz,Arsenal,Forward,75,6.2,6.0,6.0,6,90,1,0,1,0,0,0,0,0,0.0,0.0,0.0,0.0,0.26,0.03,0.29,0.2,7.5,54.5,172.0
+399,Rayan Cherki,Cherki,Man City,Midfielder,75,8.5,8.0,8.0,8,27,0,2,0,0,0,0,0,1,0.0,0.0,0.0,0.0,0.0,0.47,0.47,0.08,7.5,53.9,183.0
+154,Cole Palmer,Palmer,Chelsea,Midfielder,95,10.7,0.0,0.0,0,0,0,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.5,53.4,117.0
+86,Keane Lewis-Potter,Lewis-Potter,Brentford,Midfielder,55,0.6,10.0,10.0,10,90,1,0,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.77,0.12,0.89,0.57,5.5,53.2,201.0
+398,Phil Foden,Foden,Man City,Midfielder,70,4.4,1.0,1.0,1,81,0,0,0,1,1,0,0,0,0.0,0.0,0.0,0.0,0.12,0.4,0.52,0.63,7.0,52.4,123.0

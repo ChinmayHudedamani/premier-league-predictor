@@ -1,0 +1,21 @@
+id,full_name,web_name,team_name,position,now_cost,selected_by_percent,form,points_per_game,total_points,minutes,goals_scored,assists,clean_sheets,goals_conceded,yellow_cards,red_cards,saves,bonus,influence,creativity,threat,ict_index,expected_goals,expected_assists,expected_goal_involvements,expected_goals_conceded,price_m,ninety_mins,xGI_per_90,darkhorse_potential_score
+115,Maxim De Cuyper,De Cuyper,Brighton,Defender,45,2.6,17.0,17.0,17,77,1,1,1,0,0,0,0,2,0.0,0.0,0.0,0.0,1.47,0.21,1.68,0.29,4.5,1.0,1.68,20.79
+123,Jack Hinshelwood,Hinshelwood,Brighton,Midfielder,60,0.9,16.0,16.0,16,63,2,0,1,0,0,0,0,3,0.0,0.0,0.0,0.0,1.41,0.02,1.43,0.19,6.0,1.0,1.43,18.24
+388,Marc Guéhi,Guéhi,Man City,Defender,60,17.5,10.0,10.0,10,90,1,0,0,1,0,0,0,2,0.0,0.0,0.0,0.0,0.89,0.31,1.2,0.63,6.0,1.0,1.2,14.0
+368,Dominik Szoboszlai,Szoboszlai,Liverpool,Midfielder,70,41.9,8.0,8.0,8,90,1,0,0,2,0,0,0,1,0.0,0.0,0.0,0.0,0.85,0.27,1.12,1.58,7.0,1.0,1.12,12.46
+86,Keane Lewis-Potter,Lewis-Potter,Brentford,Midfielder,55,0.6,10.0,10.0,10,90,1,0,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.77,0.12,0.89,0.57,5.5,1.0,0.89,11.57
+316,Emersonn Correia da Silva,Emersonn,Ipswich Town,Forward,55,0.8,9.0,9.0,9,65,1,0,0,1,0,0,0,3,0.0,0.0,0.0,0.0,0.82,0.06,0.88,0.63,5.5,1.0,0.8799999999999999,11.09
+279,Semi Ajayi,Ajayi,Hull City,Defender,40,1.3,14.0,14.0,14,63,1,0,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.52,0.0,0.52,0.86,4.0,1.0,0.52,10.36
+224,Eddie Nketiah,Nketiah,Crystal Palace,Forward,55,0.5,1.0,1.0,1,55,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,0.6,0.58,1.18,0.84,5.5,1.0,1.18,10.29
+464,Yoane Wissa,Wissa,Newcastle,Forward,60,1.9,4.0,4.0,4,90,0,1,0,1,1,0,0,0,0.0,0.0,0.0,0.0,1.0,0.02,1.02,2.19,6.0,1.0,1.02,10.16
+88,Michael Kayode,Kayode,Brentford,Defender,45,4.2,13.0,13.0,13,75,1,0,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.5,0.0,0.5,0.47,4.5,1.0,0.5,9.75
+379,Alexander Isak,Isak,Liverpool,Forward,90,17.0,2.0,2.0,2,90,0,0,0,2,0,0,0,0,0.0,0.0,0.0,0.0,1.09,0.01,1.1,1.58,9.0,1.0,1.1,9.7
+565,Mamadou Sangaré,M.Sangaré,Brentford,Midfielder,55,4.3,14.0,14.0,14,75,0,2,1,0,0,0,0,3,0.0,0.0,0.0,0.0,0.05,0.33,0.38,0.47,5.5,1.0,0.38,9.09
+106,Igor Thiago Nascimento Rodrigues,Thiago,Brentford,Forward,80,17.2,0.0,0.0,0,82,0,0,1,0,0,0,0,0,0.0,0.0,0.0,0.0,1.0,0.08,1.08,0.5,8.0,1.0,1.08,8.84
+586,Nobel Mendy,Mendy,Hull City,Defender,40,1.6,15.0,15.0,15,63,1,0,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.28,0.0,0.28,0.86,4.0,1.0,0.28,8.84
+367,Cody Gakpo,Gakpo,Liverpool,Midfielder,70,3.8,12.0,12.0,12,90,1,0,0,2,0,0,0,3,0.0,0.0,0.0,0.0,0.3,0.15,0.45,1.58,7.0,1.0,0.44999999999999996,8.7
+98,Vitaly Janelt,Janelt,Brentford,Midfielder,50,0.2,9.0,9.0,9,90,1,0,1,0,1,0,0,0,0.0,0.0,0.0,0.0,0.39,0.17,0.56,0.57,5.0,1.0,0.56,8.58
+237,Iliman Ndiaye,Ndiaye,Everton,Midfielder,60,16.0,9.0,9.0,9,90,0,1,1,0,0,0,0,1,0.0,0.0,0.0,0.0,0.24,0.32,0.56,1.96,6.0,1.0,0.56,8.48
+127,Diego Gómez Amarilla,Gomez,Brighton,Midfielder,50,3.9,6.0,6.0,6,85,0,1,1,0,0,0,0,0,0.0,0.0,0.0,0.0,0.18,0.48,0.66,0.29,5.0,1.0,0.6599999999999999,8.18
+249,Thierno Barry,Barry,Everton,Forward,55,1.6,8.0,8.0,8,78,1,0,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.45,0.09,0.54,1.62,5.5,1.0,0.54,7.97
+10,Benjamin White,White,Arsenal,Defender,55,5.1,11.0,11.0,11,90,0,1,1,0,0,0,0,2,0.0,0.0,0.0,0.0,0.18,0.21,0.39,0.2,5.5,1.0,0.39,7.97

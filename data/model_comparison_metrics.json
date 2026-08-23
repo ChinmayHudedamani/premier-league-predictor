@@ -1,0 +1,26 @@
+[
+    {
+        "model_name": "XGBoost (Gradient Boosting)",
+        "accuracy": 0.5013,
+        "log_loss": 1.0244,
+        "f1_macro": 0.3731
+    },
+    {
+        "model_name": "Support Vector Machine (SVM)",
+        "accuracy": 0.4974,
+        "log_loss": 1.0147,
+        "f1_macro": 0.3668
+    },
+    {
+        "model_name": "Deep Neural Network (DNN / MLP)",
+        "accuracy": 0.4974,
+        "log_loss": 1.0261,
+        "f1_macro": 0.371
+    },
+    {
+        "model_name": "TabNet Attentive Ensemble",
+        "accuracy": 0.4908,
+        "log_loss": 1.0442,
+        "f1_macro": 0.3866
+    }
+]
