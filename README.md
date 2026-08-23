@@ -30,11 +30,11 @@ $$w_j^* = -\frac{\sum_{i \in I_j} g_i}{\sum_{i \in I_j} h_i + \lambda}, \quad \t
 ---
 
 ### 2. Support Vector Machine / Regression (SVM / SVR)
-Solves primal quadratic optimization under $\epsilon$-insensitive loss and converts to dual form with Lagrange multipliers $\alpha_i, \alpha_i^*$:
+Solves primal quadratic optimization under $\epsilon$-insensitive loss and converts to dual form with Lagrange multipliers $\alpha_i, \alpha_i^{\ast}$:
 
-$$\min_{w, b, \xi, \xi^*} \frac{1}{2} \|w\|^2 + C \sum_{i=1}^{n} (\xi_i + \xi_i^*)$$
+$$\min_{w, b, \xi, \xi^{\ast}} \frac{1}{2} \|w\|^2 + C \sum_{i=1}^{n} (\xi_i + \xi_i^{\ast})$$
 
-$$f(x) = \sum_{i \in \text{SV}} (\alpha_i - \alpha_i^*) K(x_i, x) + b \quad \text{where } K(x_i, x_j) = \exp\left(-\gamma \|x_i - x_j\|^2\right)$$
+$$f(x) = \sum_{i \in \text{SV}} (\alpha_i - \alpha_i^{\ast}) K(x_i, x) + b \quad \text{where } K(x_i, x_j) = \exp\left(-\gamma \|x_i - x_j\|^2\right)$$
 
 ---
 
