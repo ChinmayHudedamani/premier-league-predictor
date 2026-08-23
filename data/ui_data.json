@@ -1,0 +1,1325 @@
+{
+  "teams": [
+    "AFC Bournemouth",
+    "Arsenal",
+    "Aston Villa",
+    "Brentford",
+    "Brighton & Hove Albion",
+    "Chelsea",
+    "Crystal Palace",
+    "Everton",
+    "Fulham",
+    "Ipswich Town",
+    "Leicester City",
+    "Liverpool",
+    "Manchester City",
+    "Manchester United",
+    "Newcastle United",
+    "Nottingham Forest",
+    "Southampton",
+    "Tottenham Hotspur",
+    "West Ham United",
+    "Wolverhampton Wanderers"
+  ],
+  "team_stats": {
+    "Arsenal": {
+      "team": "Arsenal",
+      "elo": 1842.5,
+      "title_win_prob": 54.1,
+      "top4_prob": 97.98,
+      "relegation_prob": 0.0,
+      "avg_projected_points": 80.0,
+      "attack_rating": 1.357,
+      "defence_rating": 0.531
+    },
+    "Manchester City": {
+      "team": "Manchester City",
+      "elo": 1822.3,
+      "title_win_prob": 32.3,
+      "top4_prob": 94.4,
+      "relegation_prob": 0.0,
+      "avg_projected_points": 77.0,
+      "attack_rating": 1.432,
+      "defence_rating": 0.664
+    },
+    "Liverpool": {
+      "team": "Liverpool",
+      "elo": 1719.7,
+      "title_win_prob": 10.95,
+      "top4_prob": 81.59,
+      "relegation_prob": 0.0,
+      "avg_projected_points": 71.7,
+      "attack_rating": 1.382,
+      "defence_rating": 0.784
+    },
+    "Chelsea": {
+      "team": "Chelsea",
+      "elo": 1636.2,
+      "title_win_prob": 0.97,
+      "top4_prob": 30.16,
+      "relegation_prob": 0.05,
+      "avg_projected_points": 61.1,
+      "attack_rating": 1.171,
+      "defence_rating": 0.924
+    },
+    "Newcastle United": {
+      "team": "Newcastle United",
+      "elo": 1623.9,
+      "title_win_prob": 0.79,
+      "top4_prob": 26.47,
+      "relegation_prob": 0.08,
+      "avg_projected_points": 60.7,
+      "attack_rating": 1.197,
+      "defence_rating": 0.96
+    },
+    "Aston Villa": {
+      "team": "Aston Villa",
+      "elo": 1685.5,
+      "title_win_prob": 0.38,
+      "top4_prob": 18.85,
+      "relegation_prob": 0.1,
+      "avg_projected_points": 58.4,
+      "attack_rating": 1.105,
+      "defence_rating": 0.942
+    },
+    "AFC Bournemouth": {
+      "team": "AFC Bournemouth",
+      "elo": 1668.1,
+      "title_win_prob": 0.14,
+      "top4_prob": 9.33,
+      "relegation_prob": 0.44,
+      "avg_projected_points": 54.5,
+      "attack_rating": 1.01,
+      "defence_rating": 0.969
+    },
+    "Brighton & Hove Albion": {
+      "team": "Brighton & Hove Albion",
+      "elo": 1633.9,
+      "title_win_prob": 0.11,
+      "top4_prob": 8.14,
+      "relegation_prob": 0.4,
+      "avg_projected_points": 54.5,
+      "attack_rating": 1.019,
+      "defence_rating": 0.977
+    },
+    "Brentford": {
+      "team": "Brentford",
+      "elo": 1628.8,
+      "title_win_prob": 0.1,
+      "top4_prob": 6.78,
+      "relegation_prob": 0.53,
+      "avg_projected_points": 53.4,
+      "attack_rating": 1.033,
+      "defence_rating": 1.031
+    },
+    "Manchester United": {
+      "team": "Manchester United",
+      "elo": 1704.8,
+      "title_win_prob": 0.07,
+      "top4_prob": 7.76,
+      "relegation_prob": 0.59,
+      "avg_projected_points": 54.4,
+      "attack_rating": 0.997,
+      "defence_rating": 0.956
+    },
+    "Tottenham Hotspur": {
+      "team": "Tottenham Hotspur",
+      "elo": 1536.9,
+      "title_win_prob": 0.05,
+      "top4_prob": 6.99,
+      "relegation_prob": 0.46,
+      "avg_projected_points": 54.0,
+      "attack_rating": 1.097,
+      "defence_rating": 1.083
+    },
+    "Everton": {
+      "team": "Everton",
+      "elo": 1590.5,
+      "title_win_prob": 0.03,
+      "top4_prob": 1.54,
+      "relegation_prob": 1.88,
+      "avg_projected_points": 48.7,
+      "attack_rating": 0.753,
+      "defence_rating": 0.853
+    },
+    "Fulham": {
+      "team": "Fulham",
+      "elo": 1600.5,
+      "title_win_prob": 0.01,
+      "top4_prob": 3.04,
+      "relegation_prob": 1.2,
+      "avg_projected_points": 50.9,
+      "attack_rating": 0.912,
+      "defence_rating": 0.973
+    },
+    "Leicester City": {
+      "team": "Leicester City",
+      "elo": 1427.0,
+      "title_win_prob": 0.0,
+      "top4_prob": 0.0,
+      "relegation_prob": 86.61,
+      "avg_projected_points": 28.2,
+      "attack_rating": 0.589,
+      "defence_rating": 1.401
+    },
+    "Crystal Palace": {
+      "team": "Crystal Palace",
+      "elo": 1585.4,
+      "title_win_prob": 0.0,
+      "top4_prob": 3.0,
+      "relegation_prob": 1.28,
+      "avg_projected_points": 50.6,
+      "attack_rating": 0.875,
+      "defence_rating": 0.941
+    },
+    "Ipswich Town": {
+      "team": "Ipswich Town",
+      "elo": 1423.9,
+      "title_win_prob": 0.0,
+      "top4_prob": 0.0,
+      "relegation_prob": 82.68,
+      "avg_projected_points": 29.1,
+      "attack_rating": 0.65,
+      "defence_rating": 1.462
+    },
+    "Nottingham Forest": {
+      "team": "Nottingham Forest",
+      "elo": 1609.1,
+      "title_win_prob": 0.0,
+      "top4_prob": 3.57,
+      "relegation_prob": 1.33,
+      "avg_projected_points": 51.6,
+      "attack_rating": 0.92,
+      "defence_rating": 0.957
+    },
+    "Southampton": {
+      "team": "Southampton",
+      "elo": 1329.9,
+      "title_win_prob": 0.0,
+      "top4_prob": 0.0,
+      "relegation_prob": 98.02,
+      "avg_projected_points": 21.4,
+      "attack_rating": 0.461,
+      "defence_rating": 1.536
+    },
+    "West Ham United": {
+      "team": "West Ham United",
+      "elo": 1544.6,
+      "title_win_prob": 0.0,
+      "top4_prob": 0.37,
+      "relegation_prob": 7.08,
+      "avg_projected_points": 44.3,
+      "attack_rating": 0.894,
+      "defence_rating": 1.18
+    },
+    "Wolverhampton Wanderers": {
+      "team": "Wolverhampton Wanderers",
+      "elo": 1452.4,
+      "title_win_prob": 0.0,
+      "top4_prob": 0.03,
+      "relegation_prob": 17.27,
+      "avg_projected_points": 39.7,
+      "attack_rating": 0.768,
+      "defence_rating": 1.189
+    }
+  },
+  "standings": [
+    {
+      "team": "Arsenal",
+      "title_win_prob_%": 54.1,
+      "top4_prob_%": 97.98,
+      "relegation_prob_%": 0.0,
+      "avg_projected_points": 80.0
+    },
+    {
+      "team": "Manchester City",
+      "title_win_prob_%": 32.3,
+      "top4_prob_%": 94.4,
+      "relegation_prob_%": 0.0,
+      "avg_projected_points": 77.0
+    },
+    {
+      "team": "Liverpool",
+      "title_win_prob_%": 10.95,
+      "top4_prob_%": 81.59,
+      "relegation_prob_%": 0.0,
+      "avg_projected_points": 71.7
+    },
+    {
+      "team": "Chelsea",
+      "title_win_prob_%": 0.97,
+      "top4_prob_%": 30.16,
+      "relegation_prob_%": 0.05,
+      "avg_projected_points": 61.1
+    },
+    {
+      "team": "Newcastle United",
+      "title_win_prob_%": 0.79,
+      "top4_prob_%": 26.47,
+      "relegation_prob_%": 0.08,
+      "avg_projected_points": 60.7
+    },
+    {
+      "team": "Aston Villa",
+      "title_win_prob_%": 0.38,
+      "top4_prob_%": 18.85,
+      "relegation_prob_%": 0.1,
+      "avg_projected_points": 58.4
+    },
+    {
+      "team": "AFC Bournemouth",
+      "title_win_prob_%": 0.14,
+      "top4_prob_%": 9.33,
+      "relegation_prob_%": 0.44,
+      "avg_projected_points": 54.5
+    },
+    {
+      "team": "Brighton & Hove Albion",
+      "title_win_prob_%": 0.11,
+      "top4_prob_%": 8.14,
+      "relegation_prob_%": 0.4,
+      "avg_projected_points": 54.5
+    },
+    {
+      "team": "Brentford",
+      "title_win_prob_%": 0.1,
+      "top4_prob_%": 6.78,
+      "relegation_prob_%": 0.53,
+      "avg_projected_points": 53.4
+    },
+    {
+      "team": "Manchester United",
+      "title_win_prob_%": 0.07,
+      "top4_prob_%": 7.76,
+      "relegation_prob_%": 0.59,
+      "avg_projected_points": 54.4
+    },
+    {
+      "team": "Tottenham Hotspur",
+      "title_win_prob_%": 0.05,
+      "top4_prob_%": 6.99,
+      "relegation_prob_%": 0.46,
+      "avg_projected_points": 54.0
+    },
+    {
+      "team": "Everton",
+      "title_win_prob_%": 0.03,
+      "top4_prob_%": 1.54,
+      "relegation_prob_%": 1.88,
+      "avg_projected_points": 48.7
+    },
+    {
+      "team": "Fulham",
+      "title_win_prob_%": 0.01,
+      "top4_prob_%": 3.04,
+      "relegation_prob_%": 1.2,
+      "avg_projected_points": 50.9
+    },
+    {
+      "team": "Leicester City",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 0.0,
+      "relegation_prob_%": 86.61,
+      "avg_projected_points": 28.2
+    },
+    {
+      "team": "Crystal Palace",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 3.0,
+      "relegation_prob_%": 1.28,
+      "avg_projected_points": 50.6
+    },
+    {
+      "team": "Ipswich Town",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 0.0,
+      "relegation_prob_%": 82.68,
+      "avg_projected_points": 29.1
+    },
+    {
+      "team": "Nottingham Forest",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 3.57,
+      "relegation_prob_%": 1.33,
+      "avg_projected_points": 51.6
+    },
+    {
+      "team": "Southampton",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 0.0,
+      "relegation_prob_%": 98.02,
+      "avg_projected_points": 21.4
+    },
+    {
+      "team": "West Ham United",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 0.37,
+      "relegation_prob_%": 7.08,
+      "avg_projected_points": 44.3
+    },
+    {
+      "team": "Wolverhampton Wanderers",
+      "title_win_prob_%": 0.0,
+      "top4_prob_%": 0.03,
+      "relegation_prob_%": 17.27,
+      "avg_projected_points": 39.7
+    }
+  ],
+  "home_advantage": 1.35,
+  "pots": [
+    {
+      "web_name": "De Cuyper",
+      "team_name": "Brighton",
+      "position": "Defender",
+      "pots_score": 0.7999976798370867,
+      "expected_goals": 1.47,
+      "expected_assists": 0.21,
+      "form": 17.0
+    },
+    {
+      "web_name": "Saka",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "pots_score": 0.7977081038855621,
+      "expected_goals": 0.64,
+      "expected_assists": 0.08,
+      "form": 9.0
+    },
+    {
+      "web_name": "White",
+      "team_name": "Arsenal",
+      "position": "Defender",
+      "pots_score": 0.7561614493049112,
+      "expected_goals": 0.18,
+      "expected_assists": 0.21,
+      "form": 11.0
+    },
+    {
+      "web_name": "Hinshelwood",
+      "team_name": "Brighton",
+      "position": "Midfielder",
+      "pots_score": 0.7242304584608009,
+      "expected_goals": 1.41,
+      "expected_assists": 0.02,
+      "form": 16.0
+    },
+    {
+      "web_name": "Ødegaard",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "pots_score": 0.7237759754089226,
+      "expected_goals": 0.21,
+      "expected_assists": 0.1,
+      "form": 11.0
+    },
+    {
+      "web_name": "Szoboszlai",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "pots_score": 0.6470392504528415,
+      "expected_goals": 0.85,
+      "expected_assists": 0.27,
+      "form": 8.0
+    },
+    {
+      "web_name": "Gakpo",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "pots_score": 0.585323929390057,
+      "expected_goals": 0.3,
+      "expected_assists": 0.15,
+      "form": 12.0
+    },
+    {
+      "web_name": "Calafiori",
+      "team_name": "Arsenal",
+      "position": "Defender",
+      "pots_score": 0.5588652339026455,
+      "expected_goals": 0.04,
+      "expected_assists": 0.09,
+      "form": 9.0
+    },
+    {
+      "web_name": "Guéhi",
+      "team_name": "Man City",
+      "position": "Defender",
+      "pots_score": 0.5342088886450002,
+      "expected_goals": 0.89,
+      "expected_assists": 0.31,
+      "form": 10.0
+    },
+    {
+      "web_name": "Tzolis",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "pots_score": 0.5017637807821634,
+      "expected_goals": 0.19,
+      "expected_assists": 0.14,
+      "form": 6.0
+    },
+    {
+      "web_name": "Ajayi",
+      "team_name": "Hull City",
+      "position": "Defender",
+      "pots_score": 0.48727985747107605,
+      "expected_goals": 0.52,
+      "expected_assists": 0.0,
+      "form": 14.0
+    },
+    {
+      "web_name": "Havertz",
+      "team_name": "Arsenal",
+      "position": "Forward",
+      "pots_score": 0.4855710438341692,
+      "expected_goals": 0.26,
+      "expected_assists": 0.03,
+      "form": 6.0
+    },
+    {
+      "web_name": "Lewis-Potter",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "pots_score": 0.47974168247585186,
+      "expected_goals": 0.77,
+      "expected_assists": 0.12,
+      "form": 10.0
+    },
+    {
+      "web_name": "Kayode",
+      "team_name": "Brentford",
+      "position": "Defender",
+      "pots_score": 0.46932511858281784,
+      "expected_goals": 0.5,
+      "expected_assists": 0.0,
+      "form": 13.0
+    },
+    {
+      "web_name": "M.Sangaré",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "pots_score": 0.46798112628397526,
+      "expected_goals": 0.05,
+      "expected_assists": 0.33,
+      "form": 14.0
+    },
+    {
+      "web_name": "Mendy",
+      "team_name": "Hull City",
+      "position": "Defender",
+      "pots_score": 0.4609643531493005,
+      "expected_goals": 0.28,
+      "expected_assists": 0.0,
+      "form": 15.0
+    },
+    {
+      "web_name": "Isak",
+      "team_name": "Liverpool",
+      "position": "Forward",
+      "pots_score": 0.44574434584396005,
+      "expected_goals": 1.09,
+      "expected_assists": 0.01,
+      "form": 2.0
+    },
+    {
+      "web_name": "Emersonn",
+      "team_name": "Ipswich Town",
+      "position": "Forward",
+      "pots_score": 0.44385842074041987,
+      "expected_goals": 0.82,
+      "expected_assists": 0.06,
+      "form": 9.0
+    },
+    {
+      "web_name": "Stach",
+      "team_name": "Leeds",
+      "position": "Midfielder",
+      "pots_score": 0.38651278490342833,
+      "expected_goals": 0.1,
+      "expected_assists": 0.05,
+      "form": 13.0
+    },
+    {
+      "web_name": "Janelt",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "pots_score": 0.3853168698271049,
+      "expected_goals": 0.39,
+      "expected_assists": 0.17,
+      "form": 9.0
+    },
+    {
+      "web_name": "Ndiaye",
+      "team_name": "Everton",
+      "position": "Midfielder",
+      "pots_score": 0.37907056780825404,
+      "expected_goals": 0.24,
+      "expected_assists": 0.32,
+      "form": 9.0
+    },
+    {
+      "web_name": "Tavernier",
+      "team_name": "Bournemouth",
+      "position": "Midfielder",
+      "pots_score": 0.373793176833761,
+      "expected_goals": 0.4,
+      "expected_assists": 0.03,
+      "form": 10.0
+    },
+    {
+      "web_name": "Dewsbury-Hall",
+      "team_name": "Everton",
+      "position": "Midfielder",
+      "pots_score": 0.3701450700296743,
+      "expected_goals": 0.12,
+      "expected_assists": 0.17,
+      "form": 11.0
+    },
+    {
+      "web_name": "Raya",
+      "team_name": "Arsenal",
+      "position": "Goalkeeper",
+      "pots_score": 0.36817370096121005,
+      "expected_goals": 0.0,
+      "expected_assists": 0.0,
+      "form": 6.0
+    },
+    {
+      "web_name": "Mosquera",
+      "team_name": "Arsenal",
+      "position": "Defender",
+      "pots_score": 0.36817370096121005,
+      "expected_goals": 0.0,
+      "expected_assists": 0.0,
+      "form": 6.0
+    }
+  ],
+  "golden_boot": [
+    {
+      "web_name": "Hinshelwood",
+      "team_name": "Brighton",
+      "position": "Midfielder",
+      "goals_scored": 2,
+      "expected_goals": 1.41,
+      "golden_boot_score": 2.705
+    },
+    {
+      "web_name": "De Cuyper",
+      "team_name": "Brighton",
+      "position": "Defender",
+      "goals_scored": 1,
+      "expected_goals": 1.47,
+      "golden_boot_score": 1.7349999999999999
+    },
+    {
+      "web_name": "Guéhi",
+      "team_name": "Man City",
+      "position": "Defender",
+      "goals_scored": 1,
+      "expected_goals": 0.89,
+      "golden_boot_score": 1.445
+    },
+    {
+      "web_name": "Szoboszlai",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.85,
+      "golden_boot_score": 1.425
+    },
+    {
+      "web_name": "Emersonn",
+      "team_name": "Ipswich Town",
+      "position": "Forward",
+      "goals_scored": 1,
+      "expected_goals": 0.82,
+      "golden_boot_score": 1.41
+    },
+    {
+      "web_name": "Lewis-Potter",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.77,
+      "golden_boot_score": 1.385
+    },
+    {
+      "web_name": "Saka",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.64,
+      "golden_boot_score": 1.32
+    },
+    {
+      "web_name": "Ajayi",
+      "team_name": "Hull City",
+      "position": "Defender",
+      "goals_scored": 1,
+      "expected_goals": 0.52,
+      "golden_boot_score": 1.26
+    },
+    {
+      "web_name": "Kayode",
+      "team_name": "Brentford",
+      "position": "Defender",
+      "goals_scored": 1,
+      "expected_goals": 0.5,
+      "golden_boot_score": 1.25
+    },
+    {
+      "web_name": "Barry",
+      "team_name": "Everton",
+      "position": "Forward",
+      "goals_scored": 1,
+      "expected_goals": 0.45,
+      "golden_boot_score": 1.225
+    },
+    {
+      "web_name": "Tavernier",
+      "team_name": "Bournemouth",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.4,
+      "golden_boot_score": 1.2
+    },
+    {
+      "web_name": "Janelt",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.39,
+      "golden_boot_score": 1.195
+    },
+    {
+      "web_name": "Gakpo",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.3,
+      "golden_boot_score": 1.15
+    },
+    {
+      "web_name": "Mendy",
+      "team_name": "Hull City",
+      "position": "Defender",
+      "goals_scored": 1,
+      "expected_goals": 0.28,
+      "golden_boot_score": 1.1400000000000001
+    },
+    {
+      "web_name": "Havertz",
+      "team_name": "Arsenal",
+      "position": "Forward",
+      "goals_scored": 1,
+      "expected_goals": 0.26,
+      "golden_boot_score": 1.13
+    },
+    {
+      "web_name": "Elanga",
+      "team_name": "Newcastle",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.22,
+      "golden_boot_score": 1.11
+    },
+    {
+      "web_name": "Ødegaard",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.21,
+      "golden_boot_score": 1.105
+    },
+    {
+      "web_name": "Gvardiol",
+      "team_name": "Man City",
+      "position": "Defender",
+      "goals_scored": 1,
+      "expected_goals": 0.19,
+      "golden_boot_score": 1.095
+    },
+    {
+      "web_name": "Angulo",
+      "team_name": "Sunderland",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.15,
+      "golden_boot_score": 1.075
+    },
+    {
+      "web_name": "Dewsbury-Hall",
+      "team_name": "Everton",
+      "position": "Midfielder",
+      "goals_scored": 1,
+      "expected_goals": 0.12,
+      "golden_boot_score": 1.06
+    }
+  ],
+  "team_synergy": [
+    {
+      "team_name": "Brighton",
+      "squad_size": 33,
+      "offensive_synergy_score": 42.2,
+      "defensive_cohesion_score": 20.0,
+      "tactical_adaptability_score": 12.73,
+      "overall_synergy_score": 29.64
+    },
+    {
+      "team_name": "Brentford",
+      "squad_size": 26,
+      "offensive_synergy_score": 37.24,
+      "defensive_cohesion_score": 20.38,
+      "tactical_adaptability_score": 16.15,
+      "overall_synergy_score": 27.97
+    },
+    {
+      "team_name": "Arsenal",
+      "squad_size": 29,
+      "offensive_synergy_score": 33.02,
+      "defensive_cohesion_score": 18.28,
+      "tactical_adaptability_score": 13.79,
+      "overall_synergy_score": 24.75
+    },
+    {
+      "team_name": "Man City",
+      "squad_size": 30,
+      "offensive_synergy_score": 30.09,
+      "defensive_cohesion_score": 20.0,
+      "tactical_adaptability_score": 7.83,
+      "overall_synergy_score": 22.61
+    },
+    {
+      "team_name": "Liverpool",
+      "squad_size": 35,
+      "offensive_synergy_score": 26.62,
+      "defensive_cohesion_score": 19.43,
+      "tactical_adaptability_score": 6.14,
+      "overall_synergy_score": 20.37
+    },
+    {
+      "team_name": "Everton",
+      "squad_size": 24,
+      "offensive_synergy_score": 23.18,
+      "defensive_cohesion_score": 18.75,
+      "tactical_adaptability_score": 15.42,
+      "overall_synergy_score": 20.3
+    },
+    {
+      "team_name": "Hull City",
+      "squad_size": 36,
+      "offensive_synergy_score": 23.68,
+      "defensive_cohesion_score": 20.0,
+      "tactical_adaptability_score": 11.39,
+      "overall_synergy_score": 20.12
+    },
+    {
+      "team_name": "Newcastle",
+      "squad_size": 27,
+      "offensive_synergy_score": 24.81,
+      "defensive_cohesion_score": 20.0,
+      "tactical_adaptability_score": 7.78,
+      "overall_synergy_score": 19.96
+    },
+    {
+      "team_name": "Ipswich Town",
+      "squad_size": 34,
+      "offensive_synergy_score": 26.51,
+      "defensive_cohesion_score": 17.06,
+      "tactical_adaptability_score": 7.35,
+      "overall_synergy_score": 19.84
+    },
+    {
+      "team_name": "Sunderland",
+      "squad_size": 25,
+      "offensive_synergy_score": 13.41,
+      "defensive_cohesion_score": 22.0,
+      "tactical_adaptability_score": 6.2,
+      "overall_synergy_score": 14.55
+    },
+    {
+      "team_name": "Bournemouth",
+      "squad_size": 28,
+      "offensive_synergy_score": 12.26,
+      "defensive_cohesion_score": 19.64,
+      "tactical_adaptability_score": 6.25,
+      "overall_synergy_score": 13.27
+    },
+    {
+      "team_name": "Crystal Palace",
+      "squad_size": 32,
+      "offensive_synergy_score": 9.67,
+      "defensive_cohesion_score": 19.38,
+      "tactical_adaptability_score": 3.91,
+      "overall_synergy_score": 11.43
+    },
+    {
+      "team_name": "Leeds",
+      "squad_size": 27,
+      "offensive_synergy_score": 3.71,
+      "defensive_cohesion_score": 20.0,
+      "tactical_adaptability_score": 13.7,
+      "overall_synergy_score": 10.6
+    },
+    {
+      "team_name": "Man Utd",
+      "squad_size": 33,
+      "offensive_synergy_score": 7.86,
+      "defensive_cohesion_score": 19.09,
+      "tactical_adaptability_score": 3.03,
+      "overall_synergy_score": 10.26
+    },
+    {
+      "team_name": "Nott'm Forest",
+      "squad_size": 28,
+      "offensive_synergy_score": 3.88,
+      "defensive_cohesion_score": 22.86,
+      "tactical_adaptability_score": 5.71,
+      "overall_synergy_score": 9.94
+    },
+    {
+      "team_name": "Spurs",
+      "squad_size": 37,
+      "offensive_synergy_score": 2.08,
+      "defensive_cohesion_score": 21.35,
+      "tactical_adaptability_score": 3.38,
+      "overall_synergy_score": 8.12
+    },
+    {
+      "team_name": "Coventry City",
+      "squad_size": 33,
+      "offensive_synergy_score": 1.32,
+      "defensive_cohesion_score": 19.09,
+      "tactical_adaptability_score": 3.33,
+      "overall_synergy_score": 7.05
+    },
+    {
+      "team_name": "Aston Villa",
+      "squad_size": 31,
+      "offensive_synergy_score": 1.29,
+      "defensive_cohesion_score": 19.68,
+      "tactical_adaptability_score": 2.42,
+      "overall_synergy_score": 7.03
+    },
+    {
+      "team_name": "Chelsea",
+      "squad_size": 38,
+      "offensive_synergy_score": 0.0,
+      "defensive_cohesion_score": 21.84,
+      "tactical_adaptability_score": 0.0,
+      "overall_synergy_score": 6.55
+    },
+    {
+      "team_name": "Fulham",
+      "squad_size": 23,
+      "offensive_synergy_score": 0.0,
+      "defensive_cohesion_score": 19.13,
+      "tactical_adaptability_score": 0.0,
+      "overall_synergy_score": 5.74
+    }
+  ],
+  "darkhorses": [
+    {
+      "web_name": "De Cuyper",
+      "team_name": "Brighton",
+      "position": "Defender",
+      "price_m": 4.5,
+      "darkhorse_potential_score": 20.79,
+      "form": 17.0
+    },
+    {
+      "web_name": "Hinshelwood",
+      "team_name": "Brighton",
+      "position": "Midfielder",
+      "price_m": 6.0,
+      "darkhorse_potential_score": 18.24,
+      "form": 16.0
+    },
+    {
+      "web_name": "Guéhi",
+      "team_name": "Man City",
+      "position": "Defender",
+      "price_m": 6.0,
+      "darkhorse_potential_score": 14.0,
+      "form": 10.0
+    },
+    {
+      "web_name": "Szoboszlai",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "price_m": 7.0,
+      "darkhorse_potential_score": 12.46,
+      "form": 8.0
+    },
+    {
+      "web_name": "Lewis-Potter",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "price_m": 5.5,
+      "darkhorse_potential_score": 11.57,
+      "form": 10.0
+    },
+    {
+      "web_name": "Emersonn",
+      "team_name": "Ipswich Town",
+      "position": "Forward",
+      "price_m": 5.5,
+      "darkhorse_potential_score": 11.09,
+      "form": 9.0
+    },
+    {
+      "web_name": "Ajayi",
+      "team_name": "Hull City",
+      "position": "Defender",
+      "price_m": 4.0,
+      "darkhorse_potential_score": 10.36,
+      "form": 14.0
+    },
+    {
+      "web_name": "Nketiah",
+      "team_name": "Crystal Palace",
+      "position": "Forward",
+      "price_m": 5.5,
+      "darkhorse_potential_score": 10.29,
+      "form": 1.0
+    },
+    {
+      "web_name": "Wissa",
+      "team_name": "Newcastle",
+      "position": "Forward",
+      "price_m": 6.0,
+      "darkhorse_potential_score": 10.16,
+      "form": 4.0
+    },
+    {
+      "web_name": "Kayode",
+      "team_name": "Brentford",
+      "position": "Defender",
+      "price_m": 4.5,
+      "darkhorse_potential_score": 9.75,
+      "form": 13.0
+    },
+    {
+      "web_name": "Isak",
+      "team_name": "Liverpool",
+      "position": "Forward",
+      "price_m": 9.0,
+      "darkhorse_potential_score": 9.7,
+      "form": 2.0
+    },
+    {
+      "web_name": "M.Sangaré",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "price_m": 5.5,
+      "darkhorse_potential_score": 9.09,
+      "form": 14.0
+    },
+    {
+      "web_name": "Thiago",
+      "team_name": "Brentford",
+      "position": "Forward",
+      "price_m": 8.0,
+      "darkhorse_potential_score": 8.84,
+      "form": 0.0
+    },
+    {
+      "web_name": "Mendy",
+      "team_name": "Hull City",
+      "position": "Defender",
+      "price_m": 4.0,
+      "darkhorse_potential_score": 8.84,
+      "form": 15.0
+    },
+    {
+      "web_name": "Gakpo",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "price_m": 7.0,
+      "darkhorse_potential_score": 8.7,
+      "form": 12.0
+    },
+    {
+      "web_name": "Janelt",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "price_m": 5.0,
+      "darkhorse_potential_score": 8.58,
+      "form": 9.0
+    },
+    {
+      "web_name": "Ndiaye",
+      "team_name": "Everton",
+      "position": "Midfielder",
+      "price_m": 6.0,
+      "darkhorse_potential_score": 8.48,
+      "form": 9.0
+    },
+    {
+      "web_name": "Gomez",
+      "team_name": "Brighton",
+      "position": "Midfielder",
+      "price_m": 5.0,
+      "darkhorse_potential_score": 8.18,
+      "form": 6.0
+    },
+    {
+      "web_name": "Barry",
+      "team_name": "Everton",
+      "position": "Forward",
+      "price_m": 5.5,
+      "darkhorse_potential_score": 7.97,
+      "form": 8.0
+    },
+    {
+      "web_name": "White",
+      "team_name": "Arsenal",
+      "position": "Defender",
+      "price_m": 5.5,
+      "darkhorse_potential_score": 7.97,
+      "form": 11.0
+    }
+  ],
+  "transfers": [
+    {
+      "web_name": "Haaland",
+      "team_name": "Man City",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 119.4,
+      "predicted_weekly_salary_k": 279.0
+    },
+    {
+      "web_name": "Isak",
+      "team_name": "Liverpool",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 84.2,
+      "predicted_weekly_salary_k": 201.0
+    },
+    {
+      "web_name": "Thiago",
+      "team_name": "Brentford",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 77.4,
+      "predicted_weekly_salary_k": 170.0
+    },
+    {
+      "web_name": "B.Fernandes",
+      "team_name": "Man Utd",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 76.0,
+      "predicted_weekly_salary_k": 183.0
+    },
+    {
+      "web_name": "Saka",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 71.4,
+      "predicted_weekly_salary_k": 233.0
+    },
+    {
+      "web_name": "Hinshelwood",
+      "team_name": "Brighton",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 69.5,
+      "predicted_weekly_salary_k": 289.0
+    },
+    {
+      "web_name": "Szoboszlai",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 67.4,
+      "predicted_weekly_salary_k": 216.0
+    },
+    {
+      "web_name": "Nketiah",
+      "team_name": "Crystal Palace",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 64.2,
+      "predicted_weekly_salary_k": 149.0
+    },
+    {
+      "web_name": "Wissa",
+      "team_name": "Newcastle",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 63.3,
+      "predicted_weekly_salary_k": 171.0
+    },
+    {
+      "web_name": "Mbeumo",
+      "team_name": "Man Utd",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 63.2,
+      "predicted_weekly_salary_k": 155.0
+    },
+    {
+      "web_name": "De Cuyper",
+      "team_name": "Brighton",
+      "position": "Defender",
+      "predicted_market_value_eur_m": 62.2,
+      "predicted_weekly_salary_k": 277.0
+    },
+    {
+      "web_name": "Mateta",
+      "team_name": "Crystal Palace",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 59.0,
+      "predicted_weekly_salary_k": 146.0
+    },
+    {
+      "web_name": "Guéhi",
+      "team_name": "Man City",
+      "position": "Defender",
+      "predicted_market_value_eur_m": 57.0,
+      "predicted_weekly_salary_k": 209.0
+    },
+    {
+      "web_name": "Emersonn",
+      "team_name": "Ipswich Town",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 56.6,
+      "predicted_weekly_salary_k": 201.0
+    },
+    {
+      "web_name": "Cunha",
+      "team_name": "Man Utd",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 56.2,
+      "predicted_weekly_salary_k": 140.0
+    },
+    {
+      "web_name": "Havertz",
+      "team_name": "Arsenal",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 54.5,
+      "predicted_weekly_salary_k": 172.0
+    },
+    {
+      "web_name": "Cherki",
+      "team_name": "Man City",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 53.9,
+      "predicted_weekly_salary_k": 183.0
+    },
+    {
+      "web_name": "Palmer",
+      "team_name": "Chelsea",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 53.4,
+      "predicted_weekly_salary_k": 117.0
+    },
+    {
+      "web_name": "Lewis-Potter",
+      "team_name": "Brentford",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 53.2,
+      "predicted_weekly_salary_k": 201.0
+    },
+    {
+      "web_name": "Foden",
+      "team_name": "Man City",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 52.4,
+      "predicted_weekly_salary_k": 123.0
+    },
+    {
+      "web_name": "Gakpo",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 50.6,
+      "predicted_weekly_salary_k": 211.0
+    },
+    {
+      "web_name": "Watkins",
+      "team_name": "Aston Villa",
+      "position": "Forward",
+      "predicted_market_value_eur_m": 50.4,
+      "predicted_weekly_salary_k": 111.0
+    },
+    {
+      "web_name": "Gibbs-White",
+      "team_name": "Nott'm Forest",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 49.8,
+      "predicted_weekly_salary_k": 126.0
+    },
+    {
+      "web_name": "Semenyo",
+      "team_name": "Man City",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 49.8,
+      "predicted_weekly_salary_k": 126.0
+    },
+    {
+      "web_name": "Wirtz",
+      "team_name": "Liverpool",
+      "position": "Midfielder",
+      "predicted_market_value_eur_m": 49.7,
+      "predicted_weekly_salary_k": 125.0
+    }
+  ],
+  "owners": [
+    {
+      "team_name": "Chelsea",
+      "owner_group": "Boehly / Clearlake Capital",
+      "investment_archetype": "Aggressive High-Volume Youth Acquisition",
+      "avg_window_budget_m": "£250.0M",
+      "wage_policy": "Incentive & Performance Heavy",
+      "predictive_action_summary": "Targeting under-23 talents with multi-year amortization, aggressive winter & summer market activity."
+    },
+    {
+      "team_name": "Manchester City",
+      "owner_group": "City Football Group (Sheikh Mansour)",
+      "investment_archetype": "Surgical High-Value Precision & Global Multi-Club Synergy",
+      "avg_window_budget_m": "£180.0M",
+      "wage_policy": "Top Tier Premium",
+      "predictive_action_summary": "Opportunistic elite signings, key positional upgrades, immediate squad depth reinforcement."
+    },
+    {
+      "team_name": "Liverpool",
+      "owner_group": "Fenway Sports Group (John W. Henry)",
+      "investment_archetype": "Strict Data-Driven Moneyball & Financial Self-Sustainability",
+      "avg_window_budget_m": "£90.0M",
+      "wage_policy": "Disciplined Wage Cap with Renewal Priority",
+      "predictive_action_summary": "Targeting high-underlying-metric undervalued targets, selling before buying high."
+    },
+    {
+      "team_name": "Newcastle United",
+      "owner_group": "Public Investment Fund (PIF)",
+      "investment_archetype": "PSR-Constrained Strategic Ambitious Escalation",
+      "avg_window_budget_m": "£120.0M",
+      "wage_policy": "Progressive Top Tier Expansion",
+      "predictive_action_summary": "High-impact starters fitting PSR limits, expanding commercial sponsorship revenue to unlock cap."
+    },
+    {
+      "team_name": "Manchester United",
+      "owner_group": "Sir Jim Ratcliffe / INEOS & Glazers",
+      "investment_archetype": "Operational Restructuring & Tactical Value Purchasing",
+      "avg_window_budget_m": "£150.0M",
+      "wage_policy": "Wage Bill Reduction & Incentive Alignment",
+      "predictive_action_summary": "Trimming high-earner wage bloat, investing in young domestic & European talents."
+    },
+    {
+      "team_name": "Tottenham Hotspur",
+      "owner_group": "ENIC Group (Daniel Levy / Joe Lewis Trust)",
+      "investment_archetype": "Infrastructure First & High-Resale Prospect Trading",
+      "avg_window_budget_m": "£85.0M",
+      "wage_policy": "Strict Internal Wage Cap Structure",
+      "predictive_action_summary": "Buying under-22 high-potential talents, tight negotiation on sell-on clauses."
+    },
+    {
+      "team_name": "Arsenal",
+      "owner_group": "Kroenke Sports & Entertainment (Stan Kroenke)",
+      "investment_archetype": "Targeted Elite System Alignment",
+      "avg_window_budget_m": "£140.0M",
+      "wage_policy": "Competitive Top Tier",
+      "predictive_action_summary": "Backing manager with prime-age versatile international stars."
+    },
+    {
+      "team_name": "Aston Villa",
+      "owner_group": "V Sports (Nassef Sawiris & Wes Edens)",
+      "investment_archetype": "European Expansion Heavy Investment",
+      "avg_window_budget_m": "£100.0M",
+      "wage_policy": "Aggressive Growth Wage",
+      "predictive_action_summary": "Champions League tier recruitment, balancing PSR compliance."
+    }
+  ]
+}
