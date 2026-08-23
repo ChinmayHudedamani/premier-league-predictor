@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Premier League 2026–27 AI Predictions & Match Predictor Engine</title>
-  <meta name="description" content="AI Machine Learning & Monte Carlo 10,000 Season Simulator for Premier League 2026–27 match outcomes, title race, POTS, and transfers.">
+  <meta name="description" content="AI Machine Learning & Monte Carlo 10,000 Season Simulator for Premier League 2026–27 match outcomes, title race, POTS, and EA FC27 tactical formations.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,6 +37,7 @@
     <!-- Navigation Tabs -->
     <nav class="nav-tabs">
       <button class="tab-btn active" data-tab="tab-predictor">⚽ Match Predictor Simulator</button>
+      <button class="tab-btn" data-tab="tab-squads">🛡️ Squads & EA FC27 Tactical Pitch</button>
       <button class="tab-btn" data-tab="tab-standings">🏆 Season Standings & Title Race</button>
       <button class="tab-btn" data-tab="tab-players">🌟 POTS & Golden Boot</button>
       <button class="tab-btn" data-tab="tab-transfers">🔮 Darkhorse & Transfer Market</button>
@@ -55,7 +56,7 @@
           <div class="team-selector-card">
             <label for="homeTeamSelect">Home Team</label>
             <select id="homeTeamSelect" class="team-select"></select>
-            <div class="team-badge-large" id="homeBadgeName">Home</div>
+            <div class="team-badge-large" id="homeBadgeName">Arsenal</div>
           </div>
 
           <!-- VS Divider -->
@@ -65,7 +66,7 @@
           <div class="team-selector-card">
             <label for="awayTeamSelect">Away Team</label>
             <select id="awayTeamSelect" class="team-select"></select>
-            <div class="team-badge-large" id="awayBadgeName" style="color:var(--accent-gold)">Away</div>
+            <div class="team-badge-large" id="awayBadgeName" style="color:var(--accent-gold)">Manchester City</div>
           </div>
         </div>
 
@@ -78,18 +79,18 @@
             <div class="prob-bars-container">
               <div class="prob-row">
                 <div class="prob-lbl">Home Win</div>
-                <div class="prob-track"><div id="homeWinProbBar" class="prob-fill fill-home"></div></div>
-                <div class="prob-val" id="homeWinProbVal">0%</div>
+                <div class="prob-track"><div id="homeWinProbBar" class="prob-fill fill-home" style="width: 51.7%"></div></div>
+                <div class="prob-val" id="homeWinProbVal">51.7%</div>
               </div>
               <div class="prob-row">
                 <div class="prob-lbl">Draw</div>
-                <div class="prob-track"><div id="drawProbBar" class="prob-fill fill-draw"></div></div>
-                <div class="prob-val" id="drawProbVal">0%</div>
+                <div class="prob-track"><div id="drawProbBar" class="prob-fill fill-draw" style="width: 26.5%"></div></div>
+                <div class="prob-val" id="drawProbVal">26.5%</div>
               </div>
               <div class="prob-row">
                 <div class="prob-lbl">Away Win</div>
-                <div class="prob-track"><div id="awayWinProbBar" class="prob-fill fill-away"></div></div>
-                <div class="prob-val" id="awayWinProbVal">0%</div>
+                <div class="prob-track"><div id="awayWinProbBar" class="prob-fill fill-away" style="width: 21.8%"></div></div>
+                <div class="prob-val" id="awayWinProbVal">21.8%</div>
               </div>
             </div>
           </div>
@@ -98,9 +99,9 @@
           <div class="metric-box">
             <div class="box-title">Expected Goals (xG)</div>
             <div class="comparison-stat">
-              <span class="num home-num" id="homeXGVal">0.00</span>
+              <span class="num home-num" id="homeXGVal">1.85</span>
               <span style="font-size:0.85rem; color:var(--text-muted)">vs</span>
-              <span class="num away-num" id="awayXGVal">0.00</span>
+              <span class="num away-num" id="awayXGVal">1.42</span>
             </div>
           </div>
 
@@ -108,9 +109,9 @@
           <div class="metric-box">
             <div class="box-title">Predicted Possession Split</div>
             <div class="comparison-stat">
-              <span class="num home-num" id="homePossVal">50%</span>
+              <span class="num home-num" id="homePossVal">54%</span>
               <span style="font-size:0.85rem; color:var(--text-muted)">-</span>
-              <span class="num away-num" id="awayPossVal">50%</span>
+              <span class="num away-num" id="awayPossVal">46%</span>
             </div>
           </div>
 
@@ -118,7 +119,7 @@
           <div class="metric-box">
             <div class="box-title">Most Likely Scoreline</div>
             <div style="font-family:var(--font-heading); font-size:2.2rem; font-weight:800; color:var(--accent-gold); text-align:center; margin-top:6px;" id="predictedScoreline">
-              0 - 0
+              2 - 1
             </div>
           </div>
 
@@ -126,7 +127,64 @@
       </div>
     </section>
 
-    <!-- Tab 2: Season Standings -->
+    <!-- Tab 2: Squads & EA FC27 Tactical Pitch -->
+    <section id="tab-squads" class="tab-view">
+      <div class="glass-card">
+        <div class="card-header">
+          <h2 class="card-title">🛡️ Select Premier League Team Squad</h2>
+          <div style="width:260px">
+            <select id="squadTeamSelect" class="team-select"></select>
+          </div>
+        </div>
+
+        <!-- Best Player MVP Banner -->
+        <div id="bestPlayerBox" class="best-player-card">
+          <div class="key-badge">90</div>
+          <div class="best-player-details">
+            <span class="badge-pill pill-gold">🌟 KEY MAN / TEAM MVP</span>
+            <h3>Saka</h3>
+            <p>Arsenal • Midfielder • Form: 9.0 • Expected Goals: 0.64 xG</p>
+          </div>
+        </div>
+
+        <!-- EA SPORTS FC 27 Tactical Football Pitch -->
+        <h3 style="font-family:var(--font-heading); font-size:1.2rem; color:var(--primary-cyan); margin-bottom:16px;">
+          🎮 EA SPORTS FC 27 Tactical Lineup Pitch View (4-3-3 Formation)
+        </h3>
+
+        <div class="tactical-pitch-container" id="tacticalPitchContainer">
+          <div class="pitch-center-line"></div>
+          <div class="pitch-center-circle"></div>
+          <div class="pitch-penalty-box-top"></div>
+          <div class="pitch-penalty-box-bottom"></div>
+        </div>
+
+        <!-- Squad Roster Table -->
+        <h3 style="font-family:var(--font-heading); font-size:1.2rem; color:#fff; margin-top:32px; margin-bottom:16px;">
+          📋 Complete Team Squad Roster & EA FC Ratings
+        </h3>
+        <div class="data-table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Player</th>
+                <th>Position</th>
+                <th>FIFA FC27 OVR</th>
+                <th>Price (£M)</th>
+                <th>xG</th>
+                <th>xA</th>
+                <th>Form</th>
+              </tr>
+            </thead>
+            <tbody id="squadTableBody"></tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Tab 3: Season Standings -->
     <section id="tab-standings" class="tab-view">
       <div class="glass-card">
         <div class="card-header">
@@ -152,7 +210,7 @@
       </div>
     </section>
 
-    <!-- Tab 3: Player Analytics -->
+    <!-- Tab 4: Player Analytics -->
     <section id="tab-players" class="tab-view">
       <div class="glass-card">
         <div class="card-header">
@@ -167,6 +225,7 @@
                 <th>Player</th>
                 <th>Club</th>
                 <th>Position</th>
+                <th>FIFA FC27 OVR</th>
                 <th>POTS Index</th>
                 <th>Expected Goals (xG)</th>
                 <th>Expected Assists (xA)</th>
@@ -202,7 +261,7 @@
       </div>
     </section>
 
-    <!-- Tab 4: Darkhorse & Transfers -->
+    <!-- Tab 5: Darkhorse & Transfers -->
     <section id="tab-transfers" class="tab-view">
       <div class="glass-card">
         <div class="card-header">

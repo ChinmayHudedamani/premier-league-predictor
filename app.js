@@ -11,6 +11,7 @@ async function initApp() {
     
     setupTabSwitching();
     setupPredictorDropdowns();
+    setupSquadTeamSelect();
     renderStandingsTable();
     renderPotsTable();
     renderGoldenBootTable();
@@ -18,8 +19,11 @@ async function initApp() {
     renderTransfersTable();
     renderOwnersGrid();
     
-    // Initial Match Calculation (Arsenal vs Manchester City)
+    // Auto-calculate Arsenal vs Manchester City on initial load!
     calculateMatchPrediction();
+    
+    // Auto-render Arsenal Squad & FIFA Pitch Formation!
+    renderTeamSquadAndPitch('Arsenal');
   } catch (err) {
     console.error('Error loading ui_data.json:', err);
   }
@@ -62,13 +66,23 @@ function setupPredictorDropdowns() {
     awaySelect.appendChild(optA);
   });
   
-  homeSelect.addEventListener('change', calculateMatchPrediction);
-  awaySelect.addEventListener('change', calculateMatchPrediction);
+  homeSelect.addEventListener('change', () => {
+    document.getElementById('homeBadgeName').textContent = homeSelect.value;
+    calculateMatchPrediction();
+  });
+  
+  awaySelect.addEventListener('change', () => {
+    document.getElementById('awayBadgeName').textContent = awaySelect.value;
+    calculateMatchPrediction();
+  });
+  
+  document.getElementById('homeBadgeName').textContent = 'Arsenal';
+  document.getElementById('awayBadgeName').textContent = 'Manchester City';
 }
 
 function calculateMatchPrediction() {
-  const homeTeam = document.getElementById('homeTeamSelect').value;
-  const awayTeam = document.getElementById('awayTeamSelect').value;
+  const homeTeam = document.getElementById('homeTeamSelect').value || 'Arsenal';
+  const awayTeam = document.getElementById('awayTeamSelect').value || 'Manchester City';
   
   if (homeTeam === awayTeam) {
     document.getElementById('predictedScoreline').textContent = 'Invalid Match';
@@ -144,6 +158,91 @@ function calculateMatchPrediction() {
   document.getElementById('predictedScoreline').textContent = `${likelyHomeG} - ${likelyAwayG}`;
 }
 
+function setupSquadTeamSelect() {
+  const squadSelect = document.getElementById('squadTeamSelect');
+  if (!squadSelect || !uiData) return;
+  
+  squadSelect.innerHTML = '';
+  uiData.teams.forEach(team => {
+    const opt = document.createElement('option');
+    opt.value = team;
+    opt.textContent = team;
+    if (team === 'Arsenal') opt.selected = true;
+    squadSelect.appendChild(opt);
+  });
+  
+  squadSelect.addEventListener('change', (e) => {
+    renderTeamSquadAndPitch(e.target.value);
+  });
+}
+
+function renderTeamSquadAndPitch(teamName) {
+  const tData = uiData.team_squads ? uiData.team_squads[teamName] : null;
+  if (!tData) return;
+  
+  // 1. Render Best Player Key Card
+  const bestBox = document.getElementById('bestPlayerBox');
+  if (bestBox && tData.best_player) {
+    const bp = tData.best_player;
+    bestBox.innerHTML = `
+      <div class="key-badge">92</div>
+      <div class="best-player-details">
+        <span class="badge-pill pill-gold">🌟 KEY MAN / TEAM MVP</span>
+        <h3 style="margin-top:4px">${bp.web_name}</h3>
+        <p>${teamName} • ${bp.position} • Form: ${bp.form} • Expected Goals: ${bp.expected_goals} xG</p>
+      </div>
+    `;
+  }
+  
+  // 2. Render FIFA FC27 Tactical Pitch Formation
+  const pitchContainer = document.getElementById('tacticalPitchContainer');
+  if (pitchContainer && tData.tactical_formation_11) {
+    // Retain markings
+    pitchContainer.innerHTML = `
+      <div class="pitch-center-line"></div>
+      <div class="pitch-center-circle"></div>
+      <div class="pitch-penalty-box-top"></div>
+      <div class="pitch-penalty-box-bottom"></div>
+    `;
+    
+    tData.tactical_formation_11.forEach(player => {
+      const card = document.createElement('div');
+      card.className = 'fut-pitch-card';
+      card.style.left = `${player.x}%`;
+      card.style.top = `${player.y}%`;
+      
+      card.innerHTML = `
+        <div class="fut-card-frame">
+          <div class="fut-ovr-badge">${player.fifa_ovr}</div>
+          <div class="fut-role-badge">${player.role}</div>
+        </div>
+        <div class="fut-player-name-tag">${player.web_name}</div>
+      `;
+      pitchContainer.appendChild(card);
+    });
+  }
+  
+  // 3. Render Full Squad Table
+  const tbody = document.getElementById('squadTableBody');
+  if (tbody && tData.squad) {
+    tbody.innerHTML = '';
+    tData.squad.forEach((p, idx) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td><span class="badge-pill pill-purple">#${idx + 1}</span></td>
+        <td><strong>${p.web_name}</strong></td>
+        <td>${p.position}</td>
+        <td><span class="badge-pill pill-gold">${p.fifa_ovr} OVR</span></td>
+        <td>£${p.price_m}M</td>
+        <td>${p.expected_goals}</td>
+        <td>${p.expected_assists}</td>
+        <td><span class="badge-pill pill-cyan">${p.form}</span></td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+}
+
 function poissonPMF(k, lambda) {
   return (Math.pow(lambda, k) * Math.exp(-lambda)) / factorial(k);
 }
@@ -194,6 +293,7 @@ function renderPotsTable() {
       <td><strong>${row.web_name}</strong></td>
       <td>${row.team_name}</td>
       <td>${row.position}</td>
+      <td><span class="badge-pill pill-gold">${row.fifa_ovr} OVR</span></td>
       <td><strong>${row.pots_score.toFixed(3)}</strong></td>
       <td>${row.expected_goals}</td>
       <td>${row.expected_assists}</td>

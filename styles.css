@@ -2,10 +2,10 @@
 
 :root {
   --bg-dark: #07090e;
-  --bg-card: rgba(18, 24, 38, 0.75);
-  --bg-card-hover: rgba(26, 35, 55, 0.85);
-  --border-glass: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(0, 242, 254, 0.25);
+  --bg-card: rgba(18, 24, 38, 0.85);
+  --bg-card-hover: rgba(26, 35, 55, 0.92);
+  --border-glass: rgba(255, 255, 255, 0.12);
+  --border-glow: rgba(0, 242, 254, 0.35);
   
   --primary-cyan: #00f2fe;
   --primary-purple: #7f00ff;
@@ -21,7 +21,7 @@
   --font-body: 'Inter', sans-serif;
   --radius-lg: 16px;
   --radius-md: 12px;
-  --shadow-glow: 0 8px 32px 0 rgba(0, 242, 254, 0.15);
+  --shadow-glow: 0 8px 32px 0 rgba(0, 242, 254, 0.2);
 }
 
 * {
@@ -33,8 +33,8 @@
 body {
   background-color: var(--bg-dark);
   background-image: 
-    radial-gradient(circle at 15% 15%, rgba(127, 0, 255, 0.12) 0%, transparent 40%),
-    radial-gradient(circle at 85% 85%, rgba(0, 242, 254, 0.10) 0%, transparent 40%);
+    radial-gradient(circle at 15% 15%, rgba(127, 0, 255, 0.15) 0%, transparent 45%),
+    radial-gradient(circle at 85% 85%, rgba(0, 242, 254, 0.12) 0%, transparent 45%);
   color: var(--text-main);
   font-family: var(--font-body);
   min-height: 100vh;
@@ -43,20 +43,21 @@ body {
 }
 
 .app-container {
-  max-width: 1320px;
+  max-width: 1340px;
   margin: 0 auto;
   padding: 24px 20px 60px;
 }
 
+/* Header & Hero */
 .hero-header {
   background: var(--bg-card);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   padding: 32px 36px;
   margin-bottom: 28px;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +73,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, var(--primary-purple), var(--primary-cyan), var(--accent-gold));
 }
 
@@ -84,9 +85,6 @@ body {
   background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, var(--primary-cyan) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  gap: 12px;
 }
 
 .brand-title p {
@@ -97,11 +95,11 @@ body {
 
 .hero-stats {
   display: flex;
-  gap: 24px;
+  gap: 20px;
 }
 
 .stat-badge {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid var(--border-glass);
   padding: 10px 18px;
   border-radius: var(--radius-md);
@@ -122,11 +120,12 @@ body {
   letter-spacing: 0.5px;
 }
 
+/* Tabs Nav */
 .nav-tabs {
   display: flex;
   gap: 8px;
   background: var(--bg-card);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
   border: 1px solid var(--border-glass);
   padding: 6px;
   border-radius: var(--radius-md);
@@ -141,7 +140,7 @@ body {
   font-family: var(--font-heading);
   font-size: 0.95rem;
   font-weight: 600;
-  padding: 12px 24px;
+  padding: 12px 22px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -153,14 +152,14 @@ body {
 
 .tab-btn:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .tab-btn.active {
   color: #fff;
-  background: linear-gradient(135deg, rgba(127, 0, 255, 0.4), rgba(0, 242, 254, 0.25));
-  border: 1px solid rgba(0, 242, 254, 0.4);
-  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.15);
+  background: linear-gradient(135deg, rgba(127, 0, 255, 0.5), rgba(0, 242, 254, 0.35));
+  border: 1px solid rgba(0, 242, 254, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 242, 254, 0.2);
 }
 
 .tab-view {
@@ -179,12 +178,12 @@ body {
 
 .glass-card {
   background: var(--bg-card);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(20px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   padding: 28px;
   margin-bottom: 24px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
 }
 
 .card-header {
@@ -206,6 +205,35 @@ body {
   gap: 10px;
 }
 
+/* FIX DROPDOWN SELECT STYLING */
+.team-select {
+  width: 100%;
+  background-color: #131924 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(0, 242, 254, 0.4) !important;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.team-select option {
+  background-color: #131924 !important;
+  color: #ffffff !important;
+  padding: 12px;
+  font-weight: 500;
+}
+
+.team-select:focus {
+  border-color: var(--primary-cyan) !important;
+  box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+}
+
 .predictor-grid {
   display: grid;
   grid-template-columns: 1fr 120px 1fr;
@@ -215,7 +243,7 @@ body {
 }
 
 .team-selector-card {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   padding: 24px;
@@ -237,25 +265,6 @@ body {
   font-weight: 600;
 }
 
-.team-select {
-  width: 100%;
-  background: #0f1420;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 12px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.team-select:focus {
-  border-color: var(--primary-cyan);
-}
-
 .team-badge-large {
   font-family: var(--font-heading);
   font-size: 1.8rem;
@@ -270,7 +279,7 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-dim);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
   width: 64px;
   height: 64px;
   border-radius: 50%;
@@ -288,7 +297,7 @@ body {
 }
 
 .metric-box {
-  background: rgba(15, 20, 32, 0.6);
+  background: rgba(15, 20, 32, 0.7);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   padding: 20px;
@@ -323,16 +332,16 @@ body {
 
 .prob-track {
   flex: 1;
-  height: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 6px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 7px;
   overflow: hidden;
   position: relative;
 }
 
 .prob-fill {
   height: 100%;
-  border-radius: 6px;
+  border-radius: 7px;
   transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -341,7 +350,7 @@ body {
 .fill-away { background: linear-gradient(90deg, #ff5252, #ffd700); }
 
 .prob-val {
-  width: 50px;
+  width: 55px;
   text-align: right;
   font-weight: 700;
   font-family: var(--font-heading);
@@ -363,6 +372,163 @@ body {
 .num.home-num { color: var(--primary-cyan); }
 .num.away-num { color: var(--accent-gold); }
 
+/* EA SPORTS FC 27 TACTICAL PITCH FORMATION VIEW */
+.tactical-pitch-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 640px;
+  margin: 0 auto;
+  background: radial-gradient(circle, #1a4d2e 0%, #0d2818 100%);
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: inset 0 0 50px rgba(0,0,0,0.8), 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* Pitch Field Markings */
+.pitch-center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.pitch-center-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+}
+
+.pitch-penalty-box-top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 120px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: none;
+  pointer-events: none;
+}
+
+.pitch-penalty-box-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 120px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: none;
+  pointer-events: none;
+}
+
+/* EA FC 27 Player Card on Pitch */
+.fut-pitch-card {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fut-pitch-card:hover {
+  transform: translate(-50%, -55%) scale(1.12);
+  z-index: 20;
+}
+
+.fut-card-frame {
+  position: relative;
+  width: 82px;
+  height: 110px;
+  margin: 0 auto;
+  background: url('assets/fut_card.jpg') no-repeat center center / cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.fut-ovr-badge {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffd700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  line-height: 1;
+}
+
+.fut-role-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.fut-player-name-tag {
+  background: rgba(11, 14, 20, 0.92);
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  border-radius: 6px;
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  margin-top: 4px;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+}
+
+/* Best Player Key Card Box */
+.best-player-card {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(127, 0, 255, 0.2));
+  border: 2px solid var(--accent-gold);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 30px rgba(255, 215, 0, 0.15);
+}
+
+.best-player-card .key-badge {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+.best-player-details h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.best-player-details p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Tables & Grid */
 .data-table-wrapper {
   width: 100%;
   overflow-x: auto;
@@ -398,7 +564,7 @@ body {
 }
 
 .data-table tbody tr:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .badge-pill {
@@ -423,7 +589,7 @@ body {
 }
 
 .owner-card {
-  background: rgba(15, 20, 32, 0.6);
+  background: rgba(15, 20, 32, 0.7);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   padding: 20px;
@@ -466,5 +632,8 @@ body {
   .hero-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .tactical-pitch-container {
+    height: 520px;
   }
 }

@@ -25,49 +25,49 @@
     "Arsenal": {
       "team": "Arsenal",
       "elo": 1842.5,
-      "title_win_prob": 54.1,
-      "top4_prob": 97.98,
+      "title_win_prob": 54.23,
+      "top4_prob": 98.08,
       "relegation_prob": 0.0,
-      "avg_projected_points": 80.0,
+      "avg_projected_points": 79.9,
       "attack_rating": 1.357,
       "defence_rating": 0.531
     },
     "Manchester City": {
       "team": "Manchester City",
       "elo": 1822.3,
-      "title_win_prob": 32.3,
-      "top4_prob": 94.4,
+      "title_win_prob": 31.87,
+      "top4_prob": 94.66,
       "relegation_prob": 0.0,
-      "avg_projected_points": 77.0,
+      "avg_projected_points": 77.1,
       "attack_rating": 1.432,
       "defence_rating": 0.664
     },
     "Liverpool": {
       "team": "Liverpool",
       "elo": 1719.7,
-      "title_win_prob": 10.95,
-      "top4_prob": 81.59,
+      "title_win_prob": 11.17,
+      "top4_prob": 82.45,
       "relegation_prob": 0.0,
-      "avg_projected_points": 71.7,
+      "avg_projected_points": 71.9,
       "attack_rating": 1.382,
       "defence_rating": 0.784
     },
     "Chelsea": {
       "team": "Chelsea",
       "elo": 1636.2,
-      "title_win_prob": 0.97,
-      "top4_prob": 30.16,
-      "relegation_prob": 0.05,
-      "avg_projected_points": 61.1,
+      "title_win_prob": 0.98,
+      "top4_prob": 29.58,
+      "relegation_prob": 0.07,
+      "avg_projected_points": 61.2,
       "attack_rating": 1.171,
       "defence_rating": 0.924
     },
     "Newcastle United": {
       "team": "Newcastle United",
       "elo": 1623.9,
-      "title_win_prob": 0.79,
-      "top4_prob": 26.47,
-      "relegation_prob": 0.08,
+      "title_win_prob": 0.7,
+      "top4_prob": 25.41,
+      "relegation_prob": 0.06,
       "avg_projected_points": 60.7,
       "attack_rating": 1.197,
       "defence_rating": 0.96
@@ -75,49 +75,39 @@
     "Aston Villa": {
       "team": "Aston Villa",
       "elo": 1685.5,
-      "title_win_prob": 0.38,
-      "top4_prob": 18.85,
-      "relegation_prob": 0.1,
-      "avg_projected_points": 58.4,
+      "title_win_prob": 0.45,
+      "top4_prob": 19.73,
+      "relegation_prob": 0.12,
+      "avg_projected_points": 58.3,
       "attack_rating": 1.105,
       "defence_rating": 0.942
-    },
-    "AFC Bournemouth": {
-      "team": "AFC Bournemouth",
-      "elo": 1668.1,
-      "title_win_prob": 0.14,
-      "top4_prob": 9.33,
-      "relegation_prob": 0.44,
-      "avg_projected_points": 54.5,
-      "attack_rating": 1.01,
-      "defence_rating": 0.969
-    },
-    "Brighton & Hove Albion": {
-      "team": "Brighton & Hove Albion",
-      "elo": 1633.9,
-      "title_win_prob": 0.11,
-      "top4_prob": 8.14,
-      "relegation_prob": 0.4,
-      "avg_projected_points": 54.5,
-      "attack_rating": 1.019,
-      "defence_rating": 0.977
     },
     "Brentford": {
       "team": "Brentford",
       "elo": 1628.8,
-      "title_win_prob": 0.1,
-      "top4_prob": 6.78,
-      "relegation_prob": 0.53,
-      "avg_projected_points": 53.4,
+      "title_win_prob": 0.11,
+      "top4_prob": 6.51,
+      "relegation_prob": 0.66,
+      "avg_projected_points": 53.3,
       "attack_rating": 1.033,
       "defence_rating": 1.031
+    },
+    "AFC Bournemouth": {
+      "team": "AFC Bournemouth",
+      "elo": 1668.1,
+      "title_win_prob": 0.11,
+      "top4_prob": 8.66,
+      "relegation_prob": 0.44,
+      "avg_projected_points": 54.4,
+      "attack_rating": 1.01,
+      "defence_rating": 0.969
     },
     "Manchester United": {
       "team": "Manchester United",
       "elo": 1704.8,
-      "title_win_prob": 0.07,
-      "top4_prob": 7.76,
-      "relegation_prob": 0.59,
+      "title_win_prob": 0.11,
+      "top4_prob": 8.02,
+      "relegation_prob": 0.56,
       "avg_projected_points": 54.4,
       "attack_rating": 0.997,
       "defence_rating": 0.956
@@ -125,80 +115,90 @@
     "Tottenham Hotspur": {
       "team": "Tottenham Hotspur",
       "elo": 1536.9,
-      "title_win_prob": 0.05,
-      "top4_prob": 6.99,
-      "relegation_prob": 0.46,
-      "avg_projected_points": 54.0,
+      "title_win_prob": 0.09,
+      "top4_prob": 6.31,
+      "relegation_prob": 0.48,
+      "avg_projected_points": 53.8,
       "attack_rating": 1.097,
       "defence_rating": 1.083
     },
-    "Everton": {
-      "team": "Everton",
-      "elo": 1590.5,
-      "title_win_prob": 0.03,
-      "top4_prob": 1.54,
-      "relegation_prob": 1.88,
-      "avg_projected_points": 48.7,
-      "attack_rating": 0.753,
-      "defence_rating": 0.853
+    "Brighton & Hove Albion": {
+      "team": "Brighton & Hove Albion",
+      "elo": 1633.9,
+      "title_win_prob": 0.08,
+      "top4_prob": 8.69,
+      "relegation_prob": 0.29,
+      "avg_projected_points": 54.6,
+      "attack_rating": 1.019,
+      "defence_rating": 0.977
+    },
+    "Nottingham Forest": {
+      "team": "Nottingham Forest",
+      "elo": 1609.1,
+      "title_win_prob": 0.04,
+      "top4_prob": 3.53,
+      "relegation_prob": 1.24,
+      "avg_projected_points": 51.7,
+      "attack_rating": 0.92,
+      "defence_rating": 0.957
     },
     "Fulham": {
       "team": "Fulham",
       "elo": 1600.5,
-      "title_win_prob": 0.01,
-      "top4_prob": 3.04,
+      "title_win_prob": 0.03,
+      "top4_prob": 3.17,
       "relegation_prob": 1.2,
-      "avg_projected_points": 50.9,
+      "avg_projected_points": 51.0,
       "attack_rating": 0.912,
       "defence_rating": 0.973
-    },
-    "Leicester City": {
-      "team": "Leicester City",
-      "elo": 1427.0,
-      "title_win_prob": 0.0,
-      "top4_prob": 0.0,
-      "relegation_prob": 86.61,
-      "avg_projected_points": 28.2,
-      "attack_rating": 0.589,
-      "defence_rating": 1.401
     },
     "Crystal Palace": {
       "team": "Crystal Palace",
       "elo": 1585.4,
-      "title_win_prob": 0.0,
-      "top4_prob": 3.0,
-      "relegation_prob": 1.28,
-      "avg_projected_points": 50.6,
+      "title_win_prob": 0.02,
+      "top4_prob": 2.89,
+      "relegation_prob": 1.3,
+      "avg_projected_points": 50.4,
       "attack_rating": 0.875,
       "defence_rating": 0.941
+    },
+    "Everton": {
+      "team": "Everton",
+      "elo": 1590.5,
+      "title_win_prob": 0.01,
+      "top4_prob": 1.87,
+      "relegation_prob": 2.23,
+      "avg_projected_points": 48.9,
+      "attack_rating": 0.753,
+      "defence_rating": 0.853
     },
     "Ipswich Town": {
       "team": "Ipswich Town",
       "elo": 1423.9,
       "title_win_prob": 0.0,
       "top4_prob": 0.0,
-      "relegation_prob": 82.68,
-      "avg_projected_points": 29.1,
+      "relegation_prob": 82.82,
+      "avg_projected_points": 29.2,
       "attack_rating": 0.65,
       "defence_rating": 1.462
     },
-    "Nottingham Forest": {
-      "team": "Nottingham Forest",
-      "elo": 1609.1,
+    "Leicester City": {
+      "team": "Leicester City",
+      "elo": 1427.0,
       "title_win_prob": 0.0,
-      "top4_prob": 3.57,
-      "relegation_prob": 1.33,
-      "avg_projected_points": 51.6,
-      "attack_rating": 0.92,
-      "defence_rating": 0.957
+      "top4_prob": 0.0,
+      "relegation_prob": 86.11,
+      "avg_projected_points": 28.2,
+      "attack_rating": 0.589,
+      "defence_rating": 1.401
     },
     "Southampton": {
       "team": "Southampton",
       "elo": 1329.9,
       "title_win_prob": 0.0,
       "top4_prob": 0.0,
-      "relegation_prob": 98.02,
-      "avg_projected_points": 21.4,
+      "relegation_prob": 97.83,
+      "avg_projected_points": 21.2,
       "attack_rating": 0.461,
       "defence_rating": 1.536
     },
@@ -206,9 +206,9 @@
       "team": "West Ham United",
       "elo": 1544.6,
       "title_win_prob": 0.0,
-      "top4_prob": 0.37,
-      "relegation_prob": 7.08,
-      "avg_projected_points": 44.3,
+      "top4_prob": 0.4,
+      "relegation_prob": 6.42,
+      "avg_projected_points": 44.4,
       "attack_rating": 0.894,
       "defence_rating": 1.18
     },
@@ -216,9 +216,9 @@
       "team": "Wolverhampton Wanderers",
       "elo": 1452.4,
       "title_win_prob": 0.0,
-      "top4_prob": 0.03,
-      "relegation_prob": 17.27,
-      "avg_projected_points": 39.7,
+      "top4_prob": 0.04,
+      "relegation_prob": 18.17,
+      "avg_projected_points": 39.8,
       "attack_rating": 0.768,
       "defence_rating": 1.189
     }
@@ -226,143 +226,143 @@
   "standings": [
     {
       "team": "Arsenal",
-      "title_win_prob_%": 54.1,
-      "top4_prob_%": 97.98,
+      "title_win_prob_%": 54.23,
+      "top4_prob_%": 98.08,
       "relegation_prob_%": 0.0,
-      "avg_projected_points": 80.0
+      "avg_projected_points": 79.9
     },
     {
       "team": "Manchester City",
-      "title_win_prob_%": 32.3,
-      "top4_prob_%": 94.4,
+      "title_win_prob_%": 31.87,
+      "top4_prob_%": 94.66,
       "relegation_prob_%": 0.0,
-      "avg_projected_points": 77.0
+      "avg_projected_points": 77.1
     },
     {
       "team": "Liverpool",
-      "title_win_prob_%": 10.95,
-      "top4_prob_%": 81.59,
+      "title_win_prob_%": 11.17,
+      "top4_prob_%": 82.45,
       "relegation_prob_%": 0.0,
-      "avg_projected_points": 71.7
+      "avg_projected_points": 71.9
     },
     {
       "team": "Chelsea",
-      "title_win_prob_%": 0.97,
-      "top4_prob_%": 30.16,
-      "relegation_prob_%": 0.05,
-      "avg_projected_points": 61.1
+      "title_win_prob_%": 0.98,
+      "top4_prob_%": 29.58,
+      "relegation_prob_%": 0.07,
+      "avg_projected_points": 61.2
     },
     {
       "team": "Newcastle United",
-      "title_win_prob_%": 0.79,
-      "top4_prob_%": 26.47,
-      "relegation_prob_%": 0.08,
+      "title_win_prob_%": 0.7,
+      "top4_prob_%": 25.41,
+      "relegation_prob_%": 0.06,
       "avg_projected_points": 60.7
     },
     {
       "team": "Aston Villa",
-      "title_win_prob_%": 0.38,
-      "top4_prob_%": 18.85,
-      "relegation_prob_%": 0.1,
-      "avg_projected_points": 58.4
-    },
-    {
-      "team": "AFC Bournemouth",
-      "title_win_prob_%": 0.14,
-      "top4_prob_%": 9.33,
-      "relegation_prob_%": 0.44,
-      "avg_projected_points": 54.5
-    },
-    {
-      "team": "Brighton & Hove Albion",
-      "title_win_prob_%": 0.11,
-      "top4_prob_%": 8.14,
-      "relegation_prob_%": 0.4,
-      "avg_projected_points": 54.5
+      "title_win_prob_%": 0.45,
+      "top4_prob_%": 19.73,
+      "relegation_prob_%": 0.12,
+      "avg_projected_points": 58.3
     },
     {
       "team": "Brentford",
-      "title_win_prob_%": 0.1,
-      "top4_prob_%": 6.78,
-      "relegation_prob_%": 0.53,
-      "avg_projected_points": 53.4
+      "title_win_prob_%": 0.11,
+      "top4_prob_%": 6.51,
+      "relegation_prob_%": 0.66,
+      "avg_projected_points": 53.3
+    },
+    {
+      "team": "AFC Bournemouth",
+      "title_win_prob_%": 0.11,
+      "top4_prob_%": 8.66,
+      "relegation_prob_%": 0.44,
+      "avg_projected_points": 54.4
     },
     {
       "team": "Manchester United",
-      "title_win_prob_%": 0.07,
-      "top4_prob_%": 7.76,
-      "relegation_prob_%": 0.59,
+      "title_win_prob_%": 0.11,
+      "top4_prob_%": 8.02,
+      "relegation_prob_%": 0.56,
       "avg_projected_points": 54.4
     },
     {
       "team": "Tottenham Hotspur",
-      "title_win_prob_%": 0.05,
-      "top4_prob_%": 6.99,
-      "relegation_prob_%": 0.46,
-      "avg_projected_points": 54.0
+      "title_win_prob_%": 0.09,
+      "top4_prob_%": 6.31,
+      "relegation_prob_%": 0.48,
+      "avg_projected_points": 53.8
     },
     {
-      "team": "Everton",
-      "title_win_prob_%": 0.03,
-      "top4_prob_%": 1.54,
-      "relegation_prob_%": 1.88,
-      "avg_projected_points": 48.7
+      "team": "Brighton & Hove Albion",
+      "title_win_prob_%": 0.08,
+      "top4_prob_%": 8.69,
+      "relegation_prob_%": 0.29,
+      "avg_projected_points": 54.6
+    },
+    {
+      "team": "Nottingham Forest",
+      "title_win_prob_%": 0.04,
+      "top4_prob_%": 3.53,
+      "relegation_prob_%": 1.24,
+      "avg_projected_points": 51.7
     },
     {
       "team": "Fulham",
-      "title_win_prob_%": 0.01,
-      "top4_prob_%": 3.04,
+      "title_win_prob_%": 0.03,
+      "top4_prob_%": 3.17,
       "relegation_prob_%": 1.2,
-      "avg_projected_points": 50.9
-    },
-    {
-      "team": "Leicester City",
-      "title_win_prob_%": 0.0,
-      "top4_prob_%": 0.0,
-      "relegation_prob_%": 86.61,
-      "avg_projected_points": 28.2
+      "avg_projected_points": 51.0
     },
     {
       "team": "Crystal Palace",
-      "title_win_prob_%": 0.0,
-      "top4_prob_%": 3.0,
-      "relegation_prob_%": 1.28,
-      "avg_projected_points": 50.6
+      "title_win_prob_%": 0.02,
+      "top4_prob_%": 2.89,
+      "relegation_prob_%": 1.3,
+      "avg_projected_points": 50.4
+    },
+    {
+      "team": "Everton",
+      "title_win_prob_%": 0.01,
+      "top4_prob_%": 1.87,
+      "relegation_prob_%": 2.23,
+      "avg_projected_points": 48.9
     },
     {
       "team": "Ipswich Town",
       "title_win_prob_%": 0.0,
       "top4_prob_%": 0.0,
-      "relegation_prob_%": 82.68,
-      "avg_projected_points": 29.1
+      "relegation_prob_%": 82.82,
+      "avg_projected_points": 29.2
     },
     {
-      "team": "Nottingham Forest",
+      "team": "Leicester City",
       "title_win_prob_%": 0.0,
-      "top4_prob_%": 3.57,
-      "relegation_prob_%": 1.33,
-      "avg_projected_points": 51.6
+      "top4_prob_%": 0.0,
+      "relegation_prob_%": 86.11,
+      "avg_projected_points": 28.2
     },
     {
       "team": "Southampton",
       "title_win_prob_%": 0.0,
       "top4_prob_%": 0.0,
-      "relegation_prob_%": 98.02,
-      "avg_projected_points": 21.4
+      "relegation_prob_%": 97.83,
+      "avg_projected_points": 21.2
     },
     {
       "team": "West Ham United",
       "title_win_prob_%": 0.0,
-      "top4_prob_%": 0.37,
-      "relegation_prob_%": 7.08,
-      "avg_projected_points": 44.3
+      "top4_prob_%": 0.4,
+      "relegation_prob_%": 6.42,
+      "avg_projected_points": 44.4
     },
     {
       "team": "Wolverhampton Wanderers",
       "title_win_prob_%": 0.0,
-      "top4_prob_%": 0.03,
-      "relegation_prob_%": 17.27,
-      "avg_projected_points": 39.7
+      "top4_prob_%": 0.04,
+      "relegation_prob_%": 18.17,
+      "avg_projected_points": 39.8
     }
   ],
   "home_advantage": 1.35,
@@ -374,25 +374,38 @@
       "pots_score": 0.7999976798370867,
       "expected_goals": 1.47,
       "expected_assists": 0.21,
-      "form": 17.0
+      "form": 17.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Saka",
       "team_name": "Arsenal",
       "position": "Midfielder",
-      "pots_score": 0.7977081038855621,
+      "pots_score": 0.7984716809171848,
       "expected_goals": 0.64,
       "expected_assists": 0.08,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 91
     },
     {
       "web_name": "White",
       "team_name": "Arsenal",
       "position": "Defender",
-      "pots_score": 0.7561614493049112,
+      "pots_score": 0.7568852573144768,
       "expected_goals": 0.18,
       "expected_assists": 0.21,
-      "form": 11.0
+      "form": 11.0,
+      "fifa_ovr": 87
+    },
+    {
+      "web_name": "Ødegaard",
+      "team_name": "Arsenal",
+      "position": "Midfielder",
+      "pots_score": 0.7244687836030107,
+      "expected_goals": 0.21,
+      "expected_assists": 0.1,
+      "form": 11.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Hinshelwood",
@@ -401,43 +414,38 @@
       "pots_score": 0.7242304584608009,
       "expected_goals": 1.41,
       "expected_assists": 0.02,
-      "form": 16.0
-    },
-    {
-      "web_name": "Ødegaard",
-      "team_name": "Arsenal",
-      "position": "Midfielder",
-      "pots_score": 0.7237759754089226,
-      "expected_goals": 0.21,
-      "expected_assists": 0.1,
-      "form": 11.0
+      "form": 16.0,
+      "fifa_ovr": 90
     },
     {
       "web_name": "Szoboszlai",
       "team_name": "Liverpool",
       "position": "Midfielder",
-      "pots_score": 0.6470392504528415,
+      "pots_score": 0.6494935583416661,
       "expected_goals": 0.85,
       "expected_assists": 0.27,
-      "form": 8.0
+      "form": 8.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Gakpo",
       "team_name": "Liverpool",
       "position": "Midfielder",
-      "pots_score": 0.585323929390057,
+      "pots_score": 0.587544142671422,
       "expected_goals": 0.3,
       "expected_assists": 0.15,
-      "form": 12.0
+      "form": 12.0,
+      "fifa_ovr": 89
     },
     {
       "web_name": "Calafiori",
       "team_name": "Arsenal",
       "position": "Defender",
-      "pots_score": 0.5588652339026455,
+      "pots_score": 0.5594001872951231,
       "expected_goals": 0.04,
       "expected_assists": 0.09,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Guéhi",
@@ -446,16 +454,18 @@
       "pots_score": 0.5342088886450002,
       "expected_goals": 0.89,
       "expected_assists": 0.31,
-      "form": 10.0
+      "form": 10.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Tzolis",
       "team_name": "Arsenal",
       "position": "Midfielder",
-      "pots_score": 0.5017637807821634,
+      "pots_score": 0.5022440758881542,
       "expected_goals": 0.19,
       "expected_assists": 0.14,
-      "form": 6.0
+      "form": 6.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Ajayi",
@@ -464,43 +474,48 @@
       "pots_score": 0.48727985747107605,
       "expected_goals": 0.52,
       "expected_assists": 0.0,
-      "form": 14.0
+      "form": 14.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Havertz",
       "team_name": "Arsenal",
       "position": "Forward",
-      "pots_score": 0.4855710438341692,
+      "pots_score": 0.48603583903242126,
       "expected_goals": 0.26,
       "expected_assists": 0.03,
-      "form": 6.0
+      "form": 6.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Lewis-Potter",
       "team_name": "Brentford",
       "position": "Midfielder",
-      "pots_score": 0.47974168247585186,
+      "pots_score": 0.47941764057743536,
       "expected_goals": 0.77,
       "expected_assists": 0.12,
-      "form": 10.0
+      "form": 10.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Kayode",
       "team_name": "Brentford",
       "position": "Defender",
-      "pots_score": 0.46932511858281784,
+      "pots_score": 0.4690081125607118,
       "expected_goals": 0.5,
       "expected_assists": 0.0,
-      "form": 13.0
+      "form": 13.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "M.Sangaré",
       "team_name": "Brentford",
       "position": "Midfielder",
-      "pots_score": 0.46798112628397526,
+      "pots_score": 0.4676650280625292,
       "expected_goals": 0.05,
       "expected_assists": 0.33,
-      "form": 14.0
+      "form": 14.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Mendy",
@@ -509,16 +524,18 @@
       "pots_score": 0.4609643531493005,
       "expected_goals": 0.28,
       "expected_assists": 0.0,
-      "form": 15.0
+      "form": 15.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Isak",
       "team_name": "Liverpool",
       "position": "Forward",
-      "pots_score": 0.44574434584396005,
+      "pots_score": 0.44743511477897935,
       "expected_goals": 1.09,
       "expected_assists": 0.01,
-      "form": 2.0
+      "form": 2.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Emersonn",
@@ -527,7 +544,8 @@
       "pots_score": 0.44385842074041987,
       "expected_goals": 0.82,
       "expected_assists": 0.06,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Stach",
@@ -536,25 +554,28 @@
       "pots_score": 0.38651278490342833,
       "expected_goals": 0.1,
       "expected_assists": 0.05,
-      "form": 13.0
+      "form": 13.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Janelt",
       "team_name": "Brentford",
       "position": "Midfielder",
-      "pots_score": 0.3853168698271049,
+      "pots_score": 0.38505660724298607,
       "expected_goals": 0.39,
       "expected_assists": 0.17,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Ndiaye",
       "team_name": "Everton",
       "position": "Midfielder",
-      "pots_score": 0.37907056780825404,
+      "pots_score": 0.37935346192142655,
       "expected_goals": 0.24,
       "expected_assists": 0.32,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Tavernier",
@@ -563,34 +584,38 @@
       "pots_score": 0.373793176833761,
       "expected_goals": 0.4,
       "expected_assists": 0.03,
-      "form": 10.0
+      "form": 10.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Dewsbury-Hall",
       "team_name": "Everton",
       "position": "Midfielder",
-      "pots_score": 0.3701450700296743,
+      "pots_score": 0.3704213031910528,
       "expected_goals": 0.12,
       "expected_assists": 0.17,
-      "form": 11.0
+      "form": 11.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Raya",
       "team_name": "Arsenal",
       "position": "Goalkeeper",
-      "pots_score": 0.36817370096121005,
+      "pots_score": 0.3685261218283569,
       "expected_goals": 0.0,
       "expected_assists": 0.0,
-      "form": 6.0
+      "form": 6.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Mosquera",
       "team_name": "Arsenal",
       "position": "Defender",
-      "pots_score": 0.36817370096121005,
+      "pots_score": 0.3685261218283569,
       "expected_goals": 0.0,
       "expected_assists": 0.0,
-      "form": 6.0
+      "form": 6.0,
+      "fifa_ovr": 84
     }
   ],
   "golden_boot": [
@@ -600,7 +625,8 @@
       "position": "Midfielder",
       "goals_scored": 2,
       "expected_goals": 1.41,
-      "golden_boot_score": 2.705
+      "golden_boot_score": 2.705,
+      "fifa_ovr": 90
     },
     {
       "web_name": "De Cuyper",
@@ -608,7 +634,8 @@
       "position": "Defender",
       "goals_scored": 1,
       "expected_goals": 1.47,
-      "golden_boot_score": 1.7349999999999999
+      "golden_boot_score": 1.7349999999999999,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Guéhi",
@@ -616,7 +643,8 @@
       "position": "Defender",
       "goals_scored": 1,
       "expected_goals": 0.89,
-      "golden_boot_score": 1.445
+      "golden_boot_score": 1.445,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Szoboszlai",
@@ -624,7 +652,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.85,
-      "golden_boot_score": 1.425
+      "golden_boot_score": 1.425,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Emersonn",
@@ -632,7 +661,8 @@
       "position": "Forward",
       "goals_scored": 1,
       "expected_goals": 0.82,
-      "golden_boot_score": 1.41
+      "golden_boot_score": 1.41,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Lewis-Potter",
@@ -640,7 +670,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.77,
-      "golden_boot_score": 1.385
+      "golden_boot_score": 1.385,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Saka",
@@ -648,7 +679,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.64,
-      "golden_boot_score": 1.32
+      "golden_boot_score": 1.32,
+      "fifa_ovr": 91
     },
     {
       "web_name": "Ajayi",
@@ -656,7 +688,8 @@
       "position": "Defender",
       "goals_scored": 1,
       "expected_goals": 0.52,
-      "golden_boot_score": 1.26
+      "golden_boot_score": 1.26,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Kayode",
@@ -664,7 +697,8 @@
       "position": "Defender",
       "goals_scored": 1,
       "expected_goals": 0.5,
-      "golden_boot_score": 1.25
+      "golden_boot_score": 1.25,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Barry",
@@ -672,7 +706,8 @@
       "position": "Forward",
       "goals_scored": 1,
       "expected_goals": 0.45,
-      "golden_boot_score": 1.225
+      "golden_boot_score": 1.225,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Tavernier",
@@ -680,7 +715,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.4,
-      "golden_boot_score": 1.2
+      "golden_boot_score": 1.2,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Janelt",
@@ -688,7 +724,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.39,
-      "golden_boot_score": 1.195
+      "golden_boot_score": 1.195,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Gakpo",
@@ -696,7 +733,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.3,
-      "golden_boot_score": 1.15
+      "golden_boot_score": 1.15,
+      "fifa_ovr": 89
     },
     {
       "web_name": "Mendy",
@@ -704,7 +742,8 @@
       "position": "Defender",
       "goals_scored": 1,
       "expected_goals": 0.28,
-      "golden_boot_score": 1.1400000000000001
+      "golden_boot_score": 1.1400000000000001,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Havertz",
@@ -712,7 +751,8 @@
       "position": "Forward",
       "goals_scored": 1,
       "expected_goals": 0.26,
-      "golden_boot_score": 1.13
+      "golden_boot_score": 1.13,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Elanga",
@@ -720,7 +760,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.22,
-      "golden_boot_score": 1.11
+      "golden_boot_score": 1.11,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Ødegaard",
@@ -728,7 +769,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.21,
-      "golden_boot_score": 1.105
+      "golden_boot_score": 1.105,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Gvardiol",
@@ -736,7 +778,8 @@
       "position": "Defender",
       "goals_scored": 1,
       "expected_goals": 0.19,
-      "golden_boot_score": 1.095
+      "golden_boot_score": 1.095,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Angulo",
@@ -744,7 +787,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.15,
-      "golden_boot_score": 1.075
+      "golden_boot_score": 1.075,
+      "fifa_ovr": 83
     },
     {
       "web_name": "Dewsbury-Hall",
@@ -752,7 +796,8 @@
       "position": "Midfielder",
       "goals_scored": 1,
       "expected_goals": 0.12,
-      "golden_boot_score": 1.06
+      "golden_boot_score": 1.06,
+      "fifa_ovr": 88
     }
   ],
   "team_synergy": [
@@ -924,7 +969,8 @@
       "position": "Defender",
       "price_m": 4.5,
       "darkhorse_potential_score": 20.79,
-      "form": 17.0
+      "form": 17.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Hinshelwood",
@@ -932,7 +978,8 @@
       "position": "Midfielder",
       "price_m": 6.0,
       "darkhorse_potential_score": 18.24,
-      "form": 16.0
+      "form": 16.0,
+      "fifa_ovr": 90
     },
     {
       "web_name": "Guéhi",
@@ -940,7 +987,8 @@
       "position": "Defender",
       "price_m": 6.0,
       "darkhorse_potential_score": 14.0,
-      "form": 10.0
+      "form": 10.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Szoboszlai",
@@ -948,7 +996,8 @@
       "position": "Midfielder",
       "price_m": 7.0,
       "darkhorse_potential_score": 12.46,
-      "form": 8.0
+      "form": 8.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Lewis-Potter",
@@ -956,7 +1005,8 @@
       "position": "Midfielder",
       "price_m": 5.5,
       "darkhorse_potential_score": 11.57,
-      "form": 10.0
+      "form": 10.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Emersonn",
@@ -964,7 +1014,8 @@
       "position": "Forward",
       "price_m": 5.5,
       "darkhorse_potential_score": 11.09,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Ajayi",
@@ -972,7 +1023,8 @@
       "position": "Defender",
       "price_m": 4.0,
       "darkhorse_potential_score": 10.36,
-      "form": 14.0
+      "form": 14.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Nketiah",
@@ -980,7 +1032,8 @@
       "position": "Forward",
       "price_m": 5.5,
       "darkhorse_potential_score": 10.29,
-      "form": 1.0
+      "form": 1.0,
+      "fifa_ovr": 82
     },
     {
       "web_name": "Wissa",
@@ -988,7 +1041,8 @@
       "position": "Forward",
       "price_m": 6.0,
       "darkhorse_potential_score": 10.16,
-      "form": 4.0
+      "form": 4.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "Kayode",
@@ -996,7 +1050,8 @@
       "position": "Defender",
       "price_m": 4.5,
       "darkhorse_potential_score": 9.75,
-      "form": 13.0
+      "form": 13.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Isak",
@@ -1004,7 +1059,8 @@
       "position": "Forward",
       "price_m": 9.0,
       "darkhorse_potential_score": 9.7,
-      "form": 2.0
+      "form": 2.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "M.Sangaré",
@@ -1012,7 +1068,8 @@
       "position": "Midfielder",
       "price_m": 5.5,
       "darkhorse_potential_score": 9.09,
-      "form": 14.0
+      "form": 14.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Thiago",
@@ -1020,7 +1077,8 @@
       "position": "Forward",
       "price_m": 8.0,
       "darkhorse_potential_score": 8.84,
-      "form": 0.0
+      "form": 0.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "Mendy",
@@ -1028,7 +1086,8 @@
       "position": "Defender",
       "price_m": 4.0,
       "darkhorse_potential_score": 8.84,
-      "form": 15.0
+      "form": 15.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Gakpo",
@@ -1036,7 +1095,8 @@
       "position": "Midfielder",
       "price_m": 7.0,
       "darkhorse_potential_score": 8.7,
-      "form": 12.0
+      "form": 12.0,
+      "fifa_ovr": 89
     },
     {
       "web_name": "Janelt",
@@ -1044,7 +1104,8 @@
       "position": "Midfielder",
       "price_m": 5.0,
       "darkhorse_potential_score": 8.58,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Ndiaye",
@@ -1052,7 +1113,8 @@
       "position": "Midfielder",
       "price_m": 6.0,
       "darkhorse_potential_score": 8.48,
-      "form": 9.0
+      "form": 9.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Gomez",
@@ -1060,7 +1122,8 @@
       "position": "Midfielder",
       "price_m": 5.0,
       "darkhorse_potential_score": 8.18,
-      "form": 6.0
+      "form": 6.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "Barry",
@@ -1068,7 +1131,8 @@
       "position": "Forward",
       "price_m": 5.5,
       "darkhorse_potential_score": 7.97,
-      "form": 8.0
+      "form": 8.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "White",
@@ -1076,7 +1140,8 @@
       "position": "Defender",
       "price_m": 5.5,
       "darkhorse_potential_score": 7.97,
-      "form": 11.0
+      "form": 11.0,
+      "fifa_ovr": 87
     }
   ],
   "transfers": [
@@ -1085,175 +1150,200 @@
       "team_name": "Man City",
       "position": "Forward",
       "predicted_market_value_eur_m": 119.4,
-      "predicted_weekly_salary_k": 279.0
+      "predicted_weekly_salary_k": 279.0,
+      "fifa_ovr": 92
     },
     {
       "web_name": "Isak",
       "team_name": "Liverpool",
       "position": "Forward",
       "predicted_market_value_eur_m": 84.2,
-      "predicted_weekly_salary_k": 201.0
+      "predicted_weekly_salary_k": 201.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Thiago",
       "team_name": "Brentford",
       "position": "Forward",
       "predicted_market_value_eur_m": 77.4,
-      "predicted_weekly_salary_k": 170.0
+      "predicted_weekly_salary_k": 170.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "B.Fernandes",
       "team_name": "Man Utd",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 76.0,
-      "predicted_weekly_salary_k": 183.0
+      "predicted_weekly_salary_k": 183.0,
+      "fifa_ovr": 91
     },
     {
       "web_name": "Saka",
       "team_name": "Arsenal",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 71.4,
-      "predicted_weekly_salary_k": 233.0
+      "predicted_weekly_salary_k": 233.0,
+      "fifa_ovr": 91
     },
     {
       "web_name": "Hinshelwood",
       "team_name": "Brighton",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 69.5,
-      "predicted_weekly_salary_k": 289.0
+      "predicted_weekly_salary_k": 289.0,
+      "fifa_ovr": 90
     },
     {
       "web_name": "Szoboszlai",
       "team_name": "Liverpool",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 67.4,
-      "predicted_weekly_salary_k": 216.0
+      "predicted_weekly_salary_k": 216.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Nketiah",
       "team_name": "Crystal Palace",
       "position": "Forward",
       "predicted_market_value_eur_m": 64.2,
-      "predicted_weekly_salary_k": 149.0
+      "predicted_weekly_salary_k": 149.0,
+      "fifa_ovr": 82
     },
     {
       "web_name": "Wissa",
       "team_name": "Newcastle",
       "position": "Forward",
       "predicted_market_value_eur_m": 63.3,
-      "predicted_weekly_salary_k": 171.0
+      "predicted_weekly_salary_k": 171.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "Mbeumo",
       "team_name": "Man Utd",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 63.2,
-      "predicted_weekly_salary_k": 155.0
+      "predicted_weekly_salary_k": 155.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "De Cuyper",
       "team_name": "Brighton",
       "position": "Defender",
       "predicted_market_value_eur_m": 62.2,
-      "predicted_weekly_salary_k": 277.0
+      "predicted_weekly_salary_k": 277.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Mateta",
       "team_name": "Crystal Palace",
       "position": "Forward",
       "predicted_market_value_eur_m": 59.0,
-      "predicted_weekly_salary_k": 146.0
+      "predicted_weekly_salary_k": 146.0,
+      "fifa_ovr": 83
     },
     {
       "web_name": "Guéhi",
       "team_name": "Man City",
       "position": "Defender",
       "predicted_market_value_eur_m": 57.0,
-      "predicted_weekly_salary_k": 209.0
+      "predicted_weekly_salary_k": 209.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Emersonn",
       "team_name": "Ipswich Town",
       "position": "Forward",
       "predicted_market_value_eur_m": 56.6,
-      "predicted_weekly_salary_k": 201.0
+      "predicted_weekly_salary_k": 201.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Cunha",
       "team_name": "Man Utd",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 56.2,
-      "predicted_weekly_salary_k": 140.0
+      "predicted_weekly_salary_k": 140.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Havertz",
       "team_name": "Arsenal",
       "position": "Forward",
       "predicted_market_value_eur_m": 54.5,
-      "predicted_weekly_salary_k": 172.0
+      "predicted_weekly_salary_k": 172.0,
+      "fifa_ovr": 87
     },
     {
       "web_name": "Cherki",
       "team_name": "Man City",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 53.9,
-      "predicted_weekly_salary_k": 183.0
+      "predicted_weekly_salary_k": 183.0,
+      "fifa_ovr": 88
     },
     {
       "web_name": "Palmer",
       "team_name": "Chelsea",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 53.4,
-      "predicted_weekly_salary_k": 117.0
+      "predicted_weekly_salary_k": 117.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Lewis-Potter",
       "team_name": "Brentford",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 53.2,
-      "predicted_weekly_salary_k": 201.0
+      "predicted_weekly_salary_k": 201.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Foden",
       "team_name": "Man City",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 52.4,
-      "predicted_weekly_salary_k": 123.0
+      "predicted_weekly_salary_k": 123.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "Gakpo",
       "team_name": "Liverpool",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 50.6,
-      "predicted_weekly_salary_k": 211.0
+      "predicted_weekly_salary_k": 211.0,
+      "fifa_ovr": 89
     },
     {
       "web_name": "Watkins",
       "team_name": "Aston Villa",
       "position": "Forward",
       "predicted_market_value_eur_m": 50.4,
-      "predicted_weekly_salary_k": 111.0
+      "predicted_weekly_salary_k": 111.0,
+      "fifa_ovr": 84
     },
     {
       "web_name": "Gibbs-White",
       "team_name": "Nott'm Forest",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 49.8,
-      "predicted_weekly_salary_k": 126.0
+      "predicted_weekly_salary_k": 126.0,
+      "fifa_ovr": 85
     },
     {
       "web_name": "Semenyo",
       "team_name": "Man City",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 49.8,
-      "predicted_weekly_salary_k": 126.0
+      "predicted_weekly_salary_k": 126.0,
+      "fifa_ovr": 86
     },
     {
       "web_name": "Wirtz",
       "team_name": "Liverpool",
       "position": "Midfielder",
       "predicted_market_value_eur_m": 49.7,
-      "predicted_weekly_salary_k": 125.0
+      "predicted_weekly_salary_k": 125.0,
+      "fifa_ovr": 85
     }
   ],
   "owners": [
@@ -1321,5 +1411,3409 @@
       "wage_policy": "Aggressive Growth Wage",
       "predictive_action_summary": "Champions League tier recruitment, balancing PSR compliance."
     }
-  ]
+  ],
+  "team_squads": {
+    "Arsenal": {
+      "team": "Arsenal",
+      "squad_size": 29,
+      "best_player": {
+        "web_name": "Saka",
+        "position": "Midfielder",
+        "price_m": 9.5,
+        "form": 9.0,
+        "expected_goals": 0.64,
+        "expected_assists": 0.08,
+        "fifa_ovr": 91
+      },
+      "avg_squad_ovr": 83.4,
+      "squad": [
+        {
+          "web_name": "Saka",
+          "position": "Midfielder",
+          "price_m": 9.5,
+          "form": 9.0,
+          "expected_goals": 0.64,
+          "expected_assists": 0.08,
+          "fifa_ovr": 91
+        },
+        {
+          "web_name": "Ødegaard",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 11.0,
+          "expected_goals": 0.21,
+          "expected_assists": 0.1,
+          "fifa_ovr": 88
+        },
+        {
+          "web_name": "White",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 11.0,
+          "expected_goals": 0.18,
+          "expected_assists": 0.21,
+          "fifa_ovr": 87
+        },
+        {
+          "web_name": "Havertz",
+          "position": "Forward",
+          "price_m": 7.5,
+          "form": 6.0,
+          "expected_goals": 0.26,
+          "expected_assists": 0.03,
+          "fifa_ovr": 87
+        },
+        {
+          "web_name": "Gabriel",
+          "position": "Defender",
+          "price_m": 8.0,
+          "form": 5.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.01,
+          "fifa_ovr": 87
+        },
+        {
+          "web_name": "Calafiori",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 9.0,
+          "expected_goals": 0.04,
+          "expected_assists": 0.09,
+          "fifa_ovr": 86
+        },
+        {
+          "web_name": "Tzolis",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 6.0,
+          "expected_goals": 0.19,
+          "expected_assists": 0.14,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Rice",
+          "position": "Midfielder",
+          "price_m": 7.5,
+          "form": 3.0,
+          "expected_goals": 0.07,
+          "expected_assists": 0.08,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Raya",
+          "position": "Goalkeeper",
+          "price_m": 6.0,
+          "form": 6.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Gyökeres",
+          "position": "Forward",
+          "price_m": 7.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Mosquera",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 6.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Lewis-Skelly",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 3.0,
+          "expected_goals": 0.06,
+          "expected_assists": 0.11,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Bruno G.",
+          "position": "Midfielder",
+          "price_m": 7.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Madueke",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.04,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Eze",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 1.0,
+          "expected_goals": 0.04,
+          "expected_assists": 0.0,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "G.Jesus",
+          "position": "Forward",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Hincapie",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "J.Timber",
+          "position": "Defender",
+          "price_m": 6.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Martinelli",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Saliba",
+          "position": "Defender",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Merino",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 1.0,
+          "expected_goals": 0.14,
+          "expected_assists": 0.02,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Zubimendi",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.02,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Nelson",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Nwaneri",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Dowman",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Fábio Vieira",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Arrizabalaga",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Meslier",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Konsa",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Raya",
+          "position": "Goalkeeper",
+          "fifa_ovr": 85,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "White",
+          "position": "Defender",
+          "fifa_ovr": 87,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Gabriel",
+          "position": "Defender",
+          "fifa_ovr": 87,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Calafiori",
+          "position": "Defender",
+          "fifa_ovr": 86,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Mosquera",
+          "position": "Defender",
+          "fifa_ovr": 84,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Saka",
+          "position": "Midfielder",
+          "fifa_ovr": 91,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Ødegaard",
+          "position": "Midfielder",
+          "fifa_ovr": 88,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Tzolis",
+          "position": "Midfielder",
+          "fifa_ovr": 85,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Havertz",
+          "position": "Forward",
+          "fifa_ovr": 87,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Gyökeres",
+          "position": "Forward",
+          "fifa_ovr": 84,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "G.Jesus",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Aston Villa": {
+      "team": "Aston Villa",
+      "squad_size": 31,
+      "best_player": {
+        "web_name": "Watkins",
+        "position": "Forward",
+        "price_m": 8.0,
+        "form": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "fifa_ovr": 84
+      },
+      "avg_squad_ovr": 80.6,
+      "squad": [
+        {
+          "web_name": "Watkins",
+          "position": "Forward",
+          "price_m": 8.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Buendía",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 2.0,
+          "expected_goals": 0.13,
+          "expected_assists": 0.09,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "McGinn",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.04,
+          "expected_assists": 0.01,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Manzambi",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Garnacho",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Kamara",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Barkley",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 2.0,
+          "expected_goals": 0.1,
+          "expected_assists": 0.02,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Alysson",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "George Hemmings",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Abraham",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Madjo",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Bailey",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Bogarde",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "M.Bizot",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Martinez",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Gomes",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": -2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Onana",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Iling Jr",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Burrowes",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Digne",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Mings",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Pau",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Maatsen",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.03,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Ruggeri",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Suzuki",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Lynch",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Cash",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": -1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "A.García",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Lindelöf",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": -2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Nedeljkovic",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Rowe",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "M.Bizot",
+          "position": "Goalkeeper",
+          "fifa_ovr": 80,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Digne",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Mings",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Pau",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Maatsen",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Buendía",
+          "position": "Midfielder",
+          "fifa_ovr": 83,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "McGinn",
+          "position": "Midfielder",
+          "fifa_ovr": 82,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Manzambi",
+          "position": "Midfielder",
+          "fifa_ovr": 82,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Watkins",
+          "position": "Forward",
+          "fifa_ovr": 84,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Abraham",
+          "position": "Forward",
+          "fifa_ovr": 81,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "Madjo",
+          "position": "Forward",
+          "fifa_ovr": 81,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Brentford": {
+      "team": "Brentford",
+      "squad_size": 26,
+      "best_player": {
+        "web_name": "M.Sangaré",
+        "position": "Midfielder",
+        "price_m": 5.5,
+        "form": 14.0,
+        "expected_goals": 0.05,
+        "expected_assists": 0.33,
+        "fifa_ovr": 88
+      },
+      "avg_squad_ovr": 82.3,
+      "squad": [
+        {
+          "web_name": "M.Sangaré",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 14.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.33,
+          "fifa_ovr": 88
+        },
+        {
+          "web_name": "Kayode",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 13.0,
+          "expected_goals": 0.5,
+          "expected_assists": 0.0,
+          "fifa_ovr": 86
+        },
+        {
+          "web_name": "Lewis-Potter",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 10.0,
+          "expected_goals": 0.77,
+          "expected_assists": 0.12,
+          "fifa_ovr": 86
+        },
+        {
+          "web_name": "Janelt",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 9.0,
+          "expected_goals": 0.39,
+          "expected_assists": 0.17,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Ajer",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 8.0,
+          "expected_goals": 0.11,
+          "expected_assists": 0.02,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Kelleher",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 7.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "O.Dango",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 3.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.29,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Jensen",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 6.0,
+          "expected_goals": 0.08,
+          "expected_assists": 0.34,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Collins",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 6.0,
+          "expected_goals": 0.34,
+          "expected_assists": 0.04,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Thiago",
+          "position": "Forward",
+          "price_m": 8.0,
+          "form": 0.0,
+          "expected_goals": 1.0,
+          "expected_assists": 0.08,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Schade",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 3.0,
+          "expected_goals": 0.52,
+          "expected_assists": 0.01,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Wilson",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.03,
+          "expected_assists": 0.04,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Damsgaard",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.11,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Anthony",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 1.0,
+          "expected_goals": 0.03,
+          "expected_assists": 0.35,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Yarmoliuk",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.04,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Valdimarsson",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Henry",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Van den Berg",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Pinnock",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Hickey",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Schuster",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Ji-soo",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Milambo",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Carvalho",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Dasilva",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Furo",
+          "position": "Forward",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Kelleher",
+          "position": "Goalkeeper",
+          "fifa_ovr": 84,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Kayode",
+          "position": "Defender",
+          "fifa_ovr": 86,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Ajer",
+          "position": "Defender",
+          "fifa_ovr": 84,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Collins",
+          "position": "Defender",
+          "fifa_ovr": 84,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Henry",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "M.Sangaré",
+          "position": "Midfielder",
+          "fifa_ovr": 88,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Lewis-Potter",
+          "position": "Midfielder",
+          "fifa_ovr": 86,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Janelt",
+          "position": "Midfielder",
+          "fifa_ovr": 85,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Thiago",
+          "position": "Forward",
+          "fifa_ovr": 84,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Wilson",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "Furo",
+          "position": "Forward",
+          "fifa_ovr": 80,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Chelsea": {
+      "team": "Chelsea",
+      "squad_size": 38,
+      "best_player": {
+        "web_name": "Palmer",
+        "position": "Midfielder",
+        "price_m": 9.5,
+        "form": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "fifa_ovr": 86
+      },
+      "avg_squad_ovr": 81.0,
+      "squad": [
+        {
+          "web_name": "Palmer",
+          "position": "Midfielder",
+          "price_m": 9.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 86
+        },
+        {
+          "web_name": "Rogers",
+          "position": "Midfielder",
+          "price_m": 7.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "João Pedro",
+          "position": "Forward",
+          "price_m": 7.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Enzo",
+          "position": "Midfielder",
+          "price_m": 7.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Estêvão",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Welbeck",
+          "position": "Forward",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Gittens",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Lacroix",
+          "position": "Defender",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "N.Jackson",
+          "position": "Forward",
+          "price_m": 6.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Neto",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Quenda",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Barco",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Mudryk",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "James",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Caicedo",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Chalobah",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Palestra",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Delap",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Jörgensen",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Sánchez",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Henderson",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Gusto",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Acheampong",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Disasi",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Fofana",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "B.Badiashile",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Tosin",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Hato",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Colwill",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "M.Sarr",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Marc Guiu",
+          "position": "Forward",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "D.Essugo",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Lavia",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Mheuka",
+          "position": "Forward",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Penders",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Emegha",
+          "position": "Forward",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Anselmino",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Chavarria",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Jörgensen",
+          "position": "Goalkeeper",
+          "fifa_ovr": 80,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Lacroix",
+          "position": "Defender",
+          "fifa_ovr": 82,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "James",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Chalobah",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Palestra",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Palmer",
+          "position": "Midfielder",
+          "fifa_ovr": 86,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Rogers",
+          "position": "Midfielder",
+          "fifa_ovr": 84,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Enzo",
+          "position": "Midfielder",
+          "fifa_ovr": 83,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "João Pedro",
+          "position": "Forward",
+          "fifa_ovr": 84,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Welbeck",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "N.Jackson",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Crystal Palace": {
+      "team": "Crystal Palace",
+      "squad_size": 32,
+      "best_player": {
+        "web_name": "Wharton",
+        "position": "Midfielder",
+        "price_m": 5.5,
+        "form": 4.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.24,
+        "fifa_ovr": 83
+      },
+      "avg_squad_ovr": 80.8,
+      "squad": [
+        {
+          "web_name": "Wharton",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 4.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.24,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Mateta",
+          "position": "Forward",
+          "price_m": 6.5,
+          "form": 2.0,
+          "expected_goals": 0.7,
+          "expected_assists": 0.02,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Richards",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 3.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Guessand",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.03,
+          "expected_assists": 0.02,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Yeremy",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.06,
+          "expected_assists": 0.02,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Kamada",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 3.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.27,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Sarr",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Henderson",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "McNeil",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 2.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.02,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Nketiah",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.6,
+          "expected_assists": 0.58,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Strand Larsen",
+          "position": "Forward",
+          "price_m": 6.0,
+          "form": 1.0,
+          "expected_goals": 0.25,
+          "expected_assists": 0.01,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Khalaili",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.16,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Canvot",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.01,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Muñoz",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.23,
+          "expected_assists": 0.01,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Benitez",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Sosa",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Lerma",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Hughes",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Mingueza",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Chadi Riad",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Mitchell",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Devenny",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "M.França",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Esse",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Drakes-Thomas",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Cardines",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "J.Rak-Sakyi",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Doucouré",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Uche",
+          "position": "Forward",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Tomiyasu",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Gozo",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Matthews",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Henderson",
+          "position": "Goalkeeper",
+          "fifa_ovr": 82,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Richards",
+          "position": "Defender",
+          "fifa_ovr": 82,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Khalaili",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Canvot",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Muñoz",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Wharton",
+          "position": "Midfielder",
+          "fifa_ovr": 83,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Guessand",
+          "position": "Midfielder",
+          "fifa_ovr": 82,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Yeremy",
+          "position": "Midfielder",
+          "fifa_ovr": 82,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Mateta",
+          "position": "Forward",
+          "fifa_ovr": 83,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Nketiah",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "Strand Larsen",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Everton": {
+      "team": "Everton",
+      "squad_size": 24,
+      "best_player": {
+        "web_name": "Dewsbury-Hall",
+        "position": "Midfielder",
+        "price_m": 6.5,
+        "form": 11.0,
+        "expected_goals": 0.12,
+        "expected_assists": 0.17,
+        "fifa_ovr": 88
+      },
+      "avg_squad_ovr": 82.3,
+      "squad": [
+        {
+          "web_name": "Dewsbury-Hall",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 11.0,
+          "expected_goals": 0.12,
+          "expected_assists": 0.17,
+          "fifa_ovr": 88
+        },
+        {
+          "web_name": "Ndiaye",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 9.0,
+          "expected_goals": 0.24,
+          "expected_assists": 0.32,
+          "fifa_ovr": 86
+        },
+        {
+          "web_name": "Pickford",
+          "position": "Goalkeeper",
+          "price_m": 5.5,
+          "form": 7.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.02,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Tarkowski",
+          "position": "Defender",
+          "price_m": 6.0,
+          "form": 6.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.0,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Barry",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 8.0,
+          "expected_goals": 0.45,
+          "expected_assists": 0.09,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Armstrong",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 8.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.04,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Branthwaite",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 6.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "George",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 3.0,
+          "expected_goals": 0.18,
+          "expected_assists": 0.08,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Mykolenko",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 6.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.05,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Hackney",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 3.0,
+          "expected_goals": 0.01,
+          "expected_assists": 0.01,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Röhl",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 3.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.06,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Garner",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.03,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Johnson",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Beto",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.05,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Dibling",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Alcaraz",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.02,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Keane",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "King",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Nørgaard",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Travers",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Patterson",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Iroegbunam",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "O'Brien",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Aznou",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Pickford",
+          "position": "Goalkeeper",
+          "fifa_ovr": 85,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Tarkowski",
+          "position": "Defender",
+          "fifa_ovr": 85,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Branthwaite",
+          "position": "Defender",
+          "fifa_ovr": 84,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Mykolenko",
+          "position": "Defender",
+          "fifa_ovr": 83,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Keane",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Dewsbury-Hall",
+          "position": "Midfielder",
+          "fifa_ovr": 88,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Ndiaye",
+          "position": "Midfielder",
+          "fifa_ovr": 86,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Armstrong",
+          "position": "Midfielder",
+          "fifa_ovr": 84,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Barry",
+          "position": "Forward",
+          "fifa_ovr": 85,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Beto",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "George",
+          "position": "Midfielder",
+          "fifa_ovr": 83,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Fulham": {
+      "team": "Fulham",
+      "squad_size": 23,
+      "best_player": {
+        "web_name": "Gonzalo",
+        "position": "Forward",
+        "price_m": 6.0,
+        "form": 0.0,
+        "expected_goals": 0.0,
+        "expected_assists": 0.0,
+        "fifa_ovr": 82
+      },
+      "avg_squad_ovr": 80.3,
+      "squad": [
+        {
+          "web_name": "Gonzalo",
+          "position": "Forward",
+          "price_m": 6.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Palacios",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "King",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Iwobi",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Bobb",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Smith Rowe",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Muniz",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Kevin",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Cairney",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Tete",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Berge",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Andersen",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Robinson",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Leno",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "J.Cuenca",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Reed",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Sessegnon",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Castagne",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Bassey",
+          "position": "Defender",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Kusi-Asare",
+          "position": "Forward",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Charles",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Lecomte",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "McNally",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Leno",
+          "position": "Goalkeeper",
+          "fifa_ovr": 80,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Tete",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Andersen",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Robinson",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "J.Cuenca",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Palacios",
+          "position": "Midfielder",
+          "fifa_ovr": 81,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "King",
+          "position": "Midfielder",
+          "fifa_ovr": 81,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Iwobi",
+          "position": "Midfielder",
+          "fifa_ovr": 81,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Gonzalo",
+          "position": "Forward",
+          "fifa_ovr": 82,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Muniz",
+          "position": "Forward",
+          "fifa_ovr": 81,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "Kusi-Asare",
+          "position": "Forward",
+          "fifa_ovr": 80,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Ipswich Town": {
+      "team": "Ipswich Town",
+      "squad_size": 34,
+      "best_player": {
+        "web_name": "Emersonn",
+        "position": "Forward",
+        "price_m": 5.5,
+        "form": 9.0,
+        "expected_goals": 0.82,
+        "expected_assists": 0.06,
+        "fifa_ovr": 86
+      },
+      "avg_squad_ovr": 80.7,
+      "squad": [
+        {
+          "web_name": "Emersonn",
+          "position": "Forward",
+          "price_m": 5.5,
+          "form": 9.0,
+          "expected_goals": 0.82,
+          "expected_assists": 0.06,
+          "fifa_ovr": 86
+        },
+        {
+          "web_name": "Clarke",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 7.0,
+          "expected_goals": 0.1,
+          "expected_assists": 0.0,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Enciso",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 5.0,
+          "expected_goals": 0.23,
+          "expected_assists": 0.31,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Lukić",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 5.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.02,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Fatawu",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.41,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Núñez",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 4.0,
+          "expected_goals": 0.03,
+          "expected_assists": 0.03,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Maeda",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 2.0,
+          "expected_goals": 0.61,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Scherpen",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Philogene",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "O'Shea",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 4.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.16,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Akpom",
+          "position": "Forward",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Diop",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Taylor",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Burns",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Matusiwa",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Walton",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Davis",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Greaves",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "McAteer",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Al-Hamadi",
+          "position": "Forward",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Walle Egeli",
+          "position": "Forward",
+          "price_m": 4.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Van Oevelen",
+          "position": "Goalkeeper",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Mehmeti",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Ogbene",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Szmodics",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Hirst",
+          "position": "Forward",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Ouattara",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Florentino",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Humphreys",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Furlong",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Kipré",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Button",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Palmer",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Johnson",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "Scherpen",
+          "position": "Goalkeeper",
+          "fifa_ovr": 81,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "O'Shea",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Diop",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Davis",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Greaves",
+          "position": "Defender",
+          "fifa_ovr": 80,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Clarke",
+          "position": "Midfielder",
+          "fifa_ovr": 85,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Enciso",
+          "position": "Midfielder",
+          "fifa_ovr": 84,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Lukić",
+          "position": "Midfielder",
+          "fifa_ovr": 83,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Emersonn",
+          "position": "Forward",
+          "fifa_ovr": 86,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Akpom",
+          "position": "Forward",
+          "fifa_ovr": 81,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "Al-Hamadi",
+          "position": "Forward",
+          "fifa_ovr": 80,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    },
+    "Liverpool": {
+      "team": "Liverpool",
+      "squad_size": 35,
+      "best_player": {
+        "web_name": "Gakpo",
+        "position": "Midfielder",
+        "price_m": 7.0,
+        "form": 12.0,
+        "expected_goals": 0.3,
+        "expected_assists": 0.15,
+        "fifa_ovr": 89
+      },
+      "avg_squad_ovr": 81.5,
+      "squad": [
+        {
+          "web_name": "Gakpo",
+          "position": "Midfielder",
+          "price_m": 7.0,
+          "form": 12.0,
+          "expected_goals": 0.3,
+          "expected_assists": 0.15,
+          "fifa_ovr": 89
+        },
+        {
+          "web_name": "Szoboszlai",
+          "position": "Midfielder",
+          "price_m": 7.0,
+          "form": 8.0,
+          "expected_goals": 0.85,
+          "expected_assists": 0.27,
+          "fifa_ovr": 87
+        },
+        {
+          "web_name": "Isak",
+          "position": "Forward",
+          "price_m": 9.0,
+          "form": 2.0,
+          "expected_goals": 1.09,
+          "expected_assists": 0.01,
+          "fifa_ovr": 87
+        },
+        {
+          "web_name": "Wirtz",
+          "position": "Midfielder",
+          "price_m": 7.5,
+          "form": 2.0,
+          "expected_goals": 0.26,
+          "expected_assists": 0.04,
+          "fifa_ovr": 85
+        },
+        {
+          "web_name": "Ekitiké",
+          "position": "Forward",
+          "price_m": 7.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Gravenberch",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 5.0,
+          "expected_goals": 0.06,
+          "expected_assists": 0.05,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Munoz",
+          "position": "Midfielder",
+          "price_m": 6.5,
+          "form": 4.0,
+          "expected_goals": 0.1,
+          "expected_assists": 0.04,
+          "fifa_ovr": 84
+        },
+        {
+          "web_name": "Ngumoha",
+          "position": "Midfielder",
+          "price_m": 6.0,
+          "form": 2.0,
+          "expected_goals": 0.04,
+          "expected_assists": 0.02,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "Virgil",
+          "position": "Defender",
+          "price_m": 6.5,
+          "form": 2.0,
+          "expected_goals": 0.25,
+          "expected_assists": 0.01,
+          "fifa_ovr": 83
+        },
+        {
+          "web_name": "A.Becker",
+          "position": "Goalkeeper",
+          "price_m": 5.5,
+          "form": 2.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Araujo",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.03,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Mac Allister",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.01,
+          "fifa_ovr": 82
+        },
+        {
+          "web_name": "Koumas",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.03,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "C.Jones",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Chiesa",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Jacquet",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 1.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.02,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Frimpong",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.01,
+          "expected_assists": 0.09,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Kerkez",
+          "position": "Defender",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.02,
+          "expected_assists": 0.02,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "Elliott",
+          "position": "Midfielder",
+          "price_m": 5.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 81
+        },
+        {
+          "web_name": "McConnell",
+          "position": "Midfielder",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Mamardashvili",
+          "position": "Goalkeeper",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Gomez",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Endo",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Bajcetic",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Nyoni",
+          "position": "Midfielder",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Bradley",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Tsimikas",
+          "position": "Defender",
+          "price_m": 5.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Danns",
+          "position": "Forward",
+          "price_m": 4.5,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 80
+        },
+        {
+          "web_name": "Woodman",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Ramsay",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Leoni",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Pecsi",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Davies",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Lucky",
+          "position": "Defender",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        },
+        {
+          "web_name": "Jaros",
+          "position": "Goalkeeper",
+          "price_m": 4.0,
+          "form": 0.0,
+          "expected_goals": 0.0,
+          "expected_assists": 0.0,
+          "fifa_ovr": 79
+        }
+      ],
+      "tactical_formation_11": [
+        {
+          "web_name": "A.Becker",
+          "position": "Goalkeeper",
+          "fifa_ovr": 82,
+          "role": "GK",
+          "x": 50,
+          "y": 88
+        },
+        {
+          "web_name": "Virgil",
+          "position": "Defender",
+          "fifa_ovr": 83,
+          "role": "LB",
+          "x": 18,
+          "y": 70
+        },
+        {
+          "web_name": "Araujo",
+          "position": "Defender",
+          "fifa_ovr": 82,
+          "role": "CB",
+          "x": 38,
+          "y": 74
+        },
+        {
+          "web_name": "Jacquet",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "CB",
+          "x": 62,
+          "y": 74
+        },
+        {
+          "web_name": "Frimpong",
+          "position": "Defender",
+          "fifa_ovr": 81,
+          "role": "RB",
+          "x": 82,
+          "y": 70
+        },
+        {
+          "web_name": "Gakpo",
+          "position": "Midfielder",
+          "fifa_ovr": 89,
+          "role": "CM",
+          "x": 32,
+          "y": 48
+        },
+        {
+          "web_name": "Szoboszlai",
+          "position": "Midfielder",
+          "fifa_ovr": 87,
+          "role": "CDM",
+          "x": 50,
+          "y": 54
+        },
+        {
+          "web_name": "Wirtz",
+          "position": "Midfielder",
+          "fifa_ovr": 85,
+          "role": "CM",
+          "x": 68,
+          "y": 48
+        },
+        {
+          "web_name": "Isak",
+          "position": "Forward",
+          "fifa_ovr": 87,
+          "role": "LW",
+          "x": 22,
+          "y": 24
+        },
+        {
+          "web_name": "Ekitiké",
+          "position": "Forward",
+          "fifa_ovr": 84,
+          "role": "ST",
+          "x": 50,
+          "y": 18
+        },
+        {
+          "web_name": "Danns",
+          "position": "Forward",
+          "fifa_ovr": 80,
+          "role": "RW",
+          "x": 78,
+          "y": 24
+        }
+      ]
+    }
+  }
 }
