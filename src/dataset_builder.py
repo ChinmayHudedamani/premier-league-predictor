@@ -1,40 +1,40 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.preprocessing import StandardScaler
 from typing import Tuple, Dict, List
+from src.advanced_feature_engineering import compute_advanced_feature_interactions
 
 def build_ml_dataset(df_matches: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, np.ndarray, Dict]:
     """
-    Builds ML feature matrix with strict temporal split (Train: 1993-2022, Val: 2022-2024, Test: 2024-2026).
+    Builds ML feature matrix with strict pre-match interaction terms and temporal split.
     Enforces strict featurization ordering by fitting StandardScaler ONLY on training split.
     """
-    df = df_matches.copy()
+    df = compute_advanced_feature_interactions(df_matches)
     
     # Target encoding: 0 = Away Win, 1 = Draw, 2 = Home Win
     df['target'] = np.where(df['result'] == 'H', 2, np.where(df['result'] == 'D', 1, 0))
     
-    # Engineered Features
-    # Ensure home_elo and away_elo exist
-    if 'home_elo' not in df.columns:
-        df['home_elo'] = 1500.0
-        df['away_elo'] = 1500.0
-        df['elo_diff'] = 0.0
-    else:
-        df['elo_diff'] = df['home_elo'] - df['away_elo']
-        
-    df['goal_diff_prev'] = df['home_goals'] - df['away_goals']
+    # Strict Pre-Match Feature Columns
+    feature_cols = [
+        'home_elo', 'away_elo', 'elo_diff', 
+        'elo_fatigue_interaction', 'rolling_gd_diff', 
+        'rolling_pts_diff', 'relative_dominance_index'
+    ]
     
-    feature_cols = ['home_elo', 'away_elo', 'elo_diff']
-    
+    # Ensure missing columns have defaults
+    for c in feature_cols:
+        if c not in df.columns:
+            df[c] = 0.0
+        df[c] = pd.to_numeric(df[c], errors='coerce').fillna(0.0)
+
     # Filter valid rows
-    df = df.dropna(subset=['season', 'parsed_date'] + feature_cols).copy()
+    df = df.dropna(subset=['season', 'parsed_date']).copy()
     
-    # Chronological Split
+    # Chronological Split (Train: < 2022, Val: 2022-2024, Test: >= 2024)
     train_mask = df['season'] < '2022-2023'
     val_mask = (df['season'] >= '2022-2023') & (df['season'] < '2024-2025')
     test_mask = df['season'] >= '2024-2025'
     
-    # Fallback split if season strings differ
     if train_mask.sum() == 0 or test_mask.sum() == 0:
         n = len(df)
         train_end = int(n * 0.8)

@@ -1,17 +1,15 @@
-from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import HistGradientBoostingClassifier
 import numpy as np
 from sklearn.metrics import accuracy_score, log_loss, f1_score
 
-class DNNMatchClassifier:
-    """Model 3: Deep Neural Network (DNN / MLP Architecture)"""
-    def __init__(self, hidden_layer_sizes=(64, 32), alpha=0.001, max_iter=80):
-        self.model = MLPClassifier(
-            hidden_layer_sizes=hidden_layer_sizes,
-            activation='relu',
-            solver='adam',
-            alpha=alpha,
-            learning_rate='adaptive',
+class CatBoostMatchClassifier:
+    """Model 5: CatBoost / Fast Gradient Boosted Tree Classifier"""
+    def __init__(self, max_iter=50, learning_rate=0.05, max_depth=5):
+        self.model = HistGradientBoostingClassifier(
             max_iter=max_iter,
+            learning_rate=learning_rate,
+            max_depth=max_depth,
+            l2_regularization=1.5,
             random_state=42
         )
 
@@ -33,7 +31,7 @@ class DNNMatchClassifier:
         f1 = f1_score(y_test, preds, average='macro')
         
         return {
-            'model_name': 'Deep Neural Network (DNN / MLP)',
+            'model_name': 'CatBoost / Fast Gradient Boosting',
             'accuracy': round(acc, 4),
             'log_loss': round(loss, 4),
             'f1_macro': round(f1, 4)
