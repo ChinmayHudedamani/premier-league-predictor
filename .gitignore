@@ -1,0 +1,8 @@
+# Python virtualenv & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.log
