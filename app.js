@@ -18,11 +18,12 @@ async function initApp() {
     renderDarkhorsesTable();
     renderTransfersTable();
     renderOwnersGrid();
+    renderImprovisationSection();
     
-    // Auto-calculate Arsenal vs Manchester City on initial load!
+    // Auto-calculate initial match prediction (Arsenal vs Manchester City)
     calculateMatchPrediction();
     
-    // Auto-render Arsenal Squad & FIFA Pitch Formation!
+    // Auto-render Arsenal Squad & FIFA Pitch Formation
     renderTeamSquadAndPitch('Arsenal');
   } catch (err) {
     console.error('Error loading ui_data.json:', err);
@@ -38,7 +39,8 @@ function setupTabSwitching() {
       
       btn.classList.add('active');
       const targetId = btn.getAttribute('data-tab');
-      document.getElementById(targetId).classList.add('active');
+      const targetView = document.getElementById(targetId);
+      if (targetView) targetView.classList.add('active');
     });
   });
 }
@@ -66,37 +68,54 @@ function setupPredictorDropdowns() {
     awaySelect.appendChild(optA);
   });
   
-  homeSelect.addEventListener('change', () => {
-    document.getElementById('homeBadgeName').textContent = homeSelect.value;
+  // FIX MANUAL DROPDOWN CHANGE EVENTS
+  homeSelect.onchange = () => {
+    const homeVal = homeSelect.value;
+    document.getElementById('homeBadgeName').textContent = homeVal;
     calculateMatchPrediction();
-  });
+  };
   
-  awaySelect.addEventListener('change', () => {
-    document.getElementById('awayBadgeName').textContent = awaySelect.value;
+  awaySelect.onchange = () => {
+    const awayVal = awaySelect.value;
+    document.getElementById('awayBadgeName').textContent = awayVal;
     calculateMatchPrediction();
-  });
+  };
   
   document.getElementById('homeBadgeName').textContent = 'Arsenal';
   document.getElementById('awayBadgeName').textContent = 'Manchester City';
 }
 
-function calculateMatchPrediction() {
-  const homeTeam = document.getElementById('homeTeamSelect').value || 'Arsenal';
-  const awayTeam = document.getElementById('awayTeamSelect').value || 'Manchester City';
+async function calculateMatchPrediction() {
+  const homeSelect = document.getElementById('homeTeamSelect');
+  const awaySelect = document.getElementById('awayTeamSelect');
+  
+  const homeTeam = homeSelect ? homeSelect.value : 'Arsenal';
+  const awayTeam = awaySelect ? awaySelect.value : 'Manchester City';
   
   if (homeTeam === awayTeam) {
     document.getElementById('predictedScoreline').textContent = 'Invalid Match';
     return;
   }
-  
+
+  try {
+    // Fetch pre-computed 2-Leg predictions from REST API backend
+    const apiRes = await fetch(`/api/predict?home=${encodeURIComponent(homeTeam)}&away=${encodeURIComponent(awayTeam)}`);
+    if (apiRes.ok) {
+      const pred = await apiRes.json();
+      render2LegPrediction(pred);
+      return;
+    }
+  } catch (e) {
+    console.warn("Backend API fetch failed, falling back to client-side math:", e);
+  }
+
+  // Client-side Fallback Poisson Calculation
   const homeStats = uiData.team_stats[homeTeam] || { elo: 1600, attack_rating: 1.0, defence_rating: 1.0 };
   const awayStats = uiData.team_stats[awayTeam] || { elo: 1600, attack_rating: 1.0, defence_rating: 1.0 };
   
-  // Dixon-Coles Poisson Lambda Expected Goals
   const lambdaHome = Math.max(0.2, homeStats.attack_rating * awayStats.defence_rating * uiData.home_advantage);
   const lambdaAway = Math.max(0.2, awayStats.attack_rating * homeStats.defence_rating * 1.05);
   
-  // Poisson PMF calculation (0..7 goals)
   const maxGoals = 7;
   const homeProbs = [];
   const awayProbs = [];
@@ -106,13 +125,8 @@ function calculateMatchPrediction() {
     awayProbs[g] = poissonPMF(g, lambdaAway);
   }
   
-  let pHomeWin = 0;
-  let pDraw = 0;
-  let pAwayWin = 0;
-  
-  let maxProb = -1;
-  let likelyHomeG = 0;
-  let likelyAwayG = 0;
+  let pHomeWin = 0, pDraw = 0, pAwayWin = 0;
+  let maxProb = -1, likelyHomeG = 0, likelyAwayG = 0;
   
   for (let h = 0; h < maxGoals; h++) {
     for (let a = 0; a < maxGoals; a++) {
@@ -120,12 +134,7 @@ function calculateMatchPrediction() {
       if (h > a) pHomeWin += p;
       else if (h === a) pDraw += p;
       else pAwayWin += p;
-      
-      if (p > maxProb) {
-        maxProb = p;
-        likelyHomeG = h;
-        likelyAwayG = a;
-      }
+      if (p > maxProb) { maxProb = p; likelyHomeG = h; likelyAwayG = a; }
     }
   }
   
@@ -134,13 +143,38 @@ function calculateMatchPrediction() {
   const pctDraw = ((pDraw / sumP) * 100).toFixed(1);
   const pctAway = ((pAwayWin / sumP) * 100).toFixed(1);
   
-  // Possession Split
   const eloHomePow = Math.pow(homeStats.elo, 1.25);
   const eloAwayPow = Math.pow(awayStats.elo, 1.25);
   const homePoss = Math.round((eloHomePow / (eloHomePow + eloAwayPow)) * 100);
   const awayPoss = 100 - homePoss;
   
-  // UI Updates
+  updateMatchUI(pctHome, pctDraw, pctAway, lambdaHome.toFixed(2), lambdaAway.toFixed(2), homePoss, awayPoss, `${likelyHomeG} - ${likelyAwayG}`);
+}
+
+function render2LegPrediction(pred) {
+  const l1 = pred.leg1_home;
+  const l2 = pred.leg2_away;
+  const agg = pred.aggregate_2leg;
+  
+  updateMatchUI(l1.home_win_pct, l1.draw_pct, l1.away_win_pct, l1.home_xg, l1.away_xg, l1.home_poss, l1.away_poss, l1.predicted_scoreline);
+  
+  const l2Box = document.getElementById('leg2PredictionBox');
+  if (l2Box) {
+    l2Box.innerHTML = `
+      <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px">Reverse Leg 2 (${pred.away_team} Home)</div>
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div>Win: <strong>${l2.home_win_pct}%</strong> | xG: <strong>${l2.home_xg} - ${l2.away_xg}</strong></div>
+        <div style="color:var(--accent-gold); font-weight:700; font-size:1.2rem;">Score: ${l2.predicted_scoreline}</div>
+      </div>
+      <div style="margin-top:10px; padding-top:10px; border-top:1px solid var(--border-glass); display:flex; justify-content:space-between; align-items:center">
+        <span class="badge-pill pill-purple">★ 2-LEG AGGREGATE WINNER</span>
+        <strong style="color:var(--primary-cyan); font-size:1.1rem">${agg.winner} (${agg.aggregate_scoreline})</strong>
+      </div>
+    `;
+  }
+}
+
+function updateMatchUI(pctHome, pctDraw, pctAway, hXG, aXG, hPoss, aPoss, scoreline) {
   document.getElementById('homeWinProbVal').textContent = `${pctHome}%`;
   document.getElementById('drawProbVal').textContent = `${pctDraw}%`;
   document.getElementById('awayWinProbVal').textContent = `${pctAway}%`;
@@ -149,13 +183,13 @@ function calculateMatchPrediction() {
   document.getElementById('drawProbBar').style.width = `${pctDraw}%`;
   document.getElementById('awayWinProbBar').style.width = `${pctAway}%`;
   
-  document.getElementById('homeXGVal').textContent = lambdaHome.toFixed(2);
-  document.getElementById('awayXGVal').textContent = lambdaAway.toFixed(2);
+  document.getElementById('homeXGVal').textContent = hXG;
+  document.getElementById('awayXGVal').textContent = aXG;
   
-  document.getElementById('homePossVal').textContent = `${homePoss}%`;
-  document.getElementById('awayPossVal').textContent = `${awayPoss}%`;
+  document.getElementById('homePossVal').textContent = `${hPoss}%`;
+  document.getElementById('awayPossVal').textContent = `${aPoss}%`;
   
-  document.getElementById('predictedScoreline').textContent = `${likelyHomeG} - ${likelyAwayG}`;
+  document.getElementById('predictedScoreline').textContent = scoreline;
 }
 
 function setupSquadTeamSelect() {
@@ -171,21 +205,20 @@ function setupSquadTeamSelect() {
     squadSelect.appendChild(opt);
   });
   
-  squadSelect.addEventListener('change', (e) => {
+  squadSelect.onchange = (e) => {
     renderTeamSquadAndPitch(e.target.value);
-  });
+  };
 }
 
 function renderTeamSquadAndPitch(teamName) {
   const tData = uiData.team_squads ? uiData.team_squads[teamName] : null;
   if (!tData) return;
   
-  // 1. Render Best Player Key Card
   const bestBox = document.getElementById('bestPlayerBox');
   if (bestBox && tData.best_player) {
     const bp = tData.best_player;
     bestBox.innerHTML = `
-      <div class="key-badge">92</div>
+      <div class="key-badge">${bp.fifa_ovr}</div>
       <div class="best-player-details">
         <span class="badge-pill pill-gold">🌟 KEY MAN / TEAM MVP</span>
         <h3 style="margin-top:4px">${bp.web_name}</h3>
@@ -194,10 +227,8 @@ function renderTeamSquadAndPitch(teamName) {
     `;
   }
   
-  // 2. Render FIFA FC27 Tactical Pitch Formation
   const pitchContainer = document.getElementById('tacticalPitchContainer');
   if (pitchContainer && tData.tactical_formation_11) {
-    // Retain markings
     pitchContainer.innerHTML = `
       <div class="pitch-center-line"></div>
       <div class="pitch-center-circle"></div>
@@ -222,7 +253,6 @@ function renderTeamSquadAndPitch(teamName) {
     });
   }
   
-  // 3. Render Full Squad Table
   const tbody = document.getElementById('squadTableBody');
   if (tbody && tData.squad) {
     tbody.innerHTML = '';
@@ -240,6 +270,44 @@ function renderTeamSquadAndPitch(teamName) {
       `;
       tbody.appendChild(tr);
     });
+  }
+}
+
+async function renderImprovisationSection() {
+  const container = document.getElementById('improvisationContainer');
+  if (!container) return;
+  
+  try {
+    const res = await fetch('/api/improvisation');
+    if (res.ok) {
+      const data = await res.json();
+      container.innerHTML = `
+        <div style="display:flex; gap:20px; align-items:center; margin-bottom:20px">
+          <div class="stat-badge" style="background:rgba(0,242,254,0.1); border-color:var(--primary-cyan)">
+            <div class="val" style="color:var(--primary-cyan)">+${data.precision_gain_pct}%</div>
+            <div class="lbl">Precision Gain</div>
+          </div>
+          <div class="stat-badge" style="background:rgba(255,215,0,0.1); border-color:var(--accent-gold)">
+            <div class="val" style="color:var(--accent-gold)">${data.improvisation_score_pct}%</div>
+            <div class="lbl">Improvisation Score</div>
+          </div>
+        </div>
+        <h4 style="color:#fff; margin-bottom:12px">Implemented AI System Upgrades:</h4>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px">
+          ${data.recommendations.map(r => `
+            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-glass); border-radius:10px; padding:14px">
+              <div style="display:flex; justify-content:space-between; margin-bottom:6px">
+                <strong style="color:var(--primary-cyan)">${r.title}</strong>
+                <span class="badge-pill pill-green">${r.impact}</span>
+              </div>
+              <p style="font-size:0.85rem; color:var(--text-muted)">${r.details}</p>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+  } catch (e) {
+    console.warn("Improvisation fetch error:", e);
   }
 }
 
