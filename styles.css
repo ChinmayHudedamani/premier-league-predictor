@@ -229,9 +229,34 @@ body {
   font-weight: 500;
 }
 
+.team-select option:disabled {
+  color: var(--text-dim) !important;
+}
+
 .team-select:focus {
   border-color: var(--primary-cyan) !important;
   box-shadow: 0 0 12px rgba(0, 242, 254, 0.4);
+}
+
+.predict-action-btn {
+  background: linear-gradient(135deg, var(--primary-purple), var(--primary-cyan));
+  color: #fff;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.predict-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 22px rgba(0, 242, 254, 0.5);
 }
 
 .predictor-grid {

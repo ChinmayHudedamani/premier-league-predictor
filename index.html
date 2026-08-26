@@ -52,16 +52,19 @@
     <section id="tab-predictor" class="tab-view active">
       <div class="glass-card">
         <div class="card-header">
-          <h2 class="card-title">🎮 Interactive 2-Leg Head-to-Head Match Predictor</h2>
-          <span class="badge-pill pill-cyan">SQLite Database & Stacking ML API</span>
+          <h2 class="card-title">🎮 Manual 2-Leg Head-to-Head Match Predictor</h2>
+          <span class="badge-pill pill-cyan">Poisson & Multi-Model Stacking AI</span>
         </div>
         
+        <!-- Team Selector Grid -->
         <div class="predictor-grid">
           <!-- Home Team Selector -->
           <div class="team-selector-card">
-            <label for="homeTeamSelect">Leg 1 Home Team</label>
-            <select id="homeTeamSelect" class="team-select"></select>
-            <div class="team-badge-large" id="homeBadgeName">Arsenal</div>
+            <label for="homeTeamSelect">Select Home Team</label>
+            <select id="homeTeamSelect" class="team-select">
+              <option value="" disabled selected>-- Select Home Team --</option>
+            </select>
+            <div class="team-badge-large" id="homeBadgeName">Home Team</div>
           </div>
 
           <!-- VS Divider -->
@@ -69,16 +72,21 @@
 
           <!-- Away Team Selector -->
           <div class="team-selector-card">
-            <label for="awayTeamSelect">Leg 1 Away Team</label>
-            <select id="awayTeamSelect" class="team-select"></select>
-            <div class="team-badge-large" id="awayBadgeName" style="color:var(--accent-gold)">Manchester City</div>
+            <label for="awayTeamSelect">Select Away Team</label>
+            <select id="awayTeamSelect" class="team-select">
+              <option value="" disabled selected>-- Select Away Team --</option>
+            </select>
+            <div class="team-badge-large" id="awayBadgeName" style="color:var(--accent-gold)">Away Team</div>
           </div>
         </div>
 
+        <button id="predictMatchBtn" class="predict-action-btn">⚡ Calculate Match Prediction</button>
+
         <!-- Leg 1 Display -->
-        <h3 style="font-family:var(--font-heading); font-size:1.1rem; color:var(--primary-cyan); margin-bottom:14px">
+        <h3 id="leg1HeaderTitle" style="font-family:var(--font-heading); font-size:1.1rem; color:var(--primary-cyan); margin-bottom:14px">
           🏟️ LEG 1 MATCH PREDICTION (HOME VENUE)
         </h3>
+        
         <div class="match-results-display">
           
           <!-- Win Probabilities -->
@@ -87,18 +95,18 @@
             <div class="prob-bars-container">
               <div class="prob-row">
                 <div class="prob-lbl">Home Win</div>
-                <div class="prob-track"><div id="homeWinProbBar" class="prob-fill fill-home" style="width: 45.9%"></div></div>
-                <div class="prob-val" id="homeWinProbVal">45.9%</div>
+                <div class="prob-track"><div id="homeWinProbBar" class="prob-fill fill-home" style="width: 0%"></div></div>
+                <div class="prob-val" id="homeWinProbVal">--%</div>
               </div>
               <div class="prob-row">
                 <div class="prob-lbl">Draw</div>
-                <div class="prob-track"><div id="drawProbBar" class="prob-fill fill-draw" style="width: 28.1%"></div></div>
-                <div class="prob-val" id="drawProbVal">28.1%</div>
+                <div class="prob-track"><div id="drawProbBar" class="prob-fill fill-draw" style="width: 0%"></div></div>
+                <div class="prob-val" id="drawProbVal">--%</div>
               </div>
               <div class="prob-row">
                 <div class="prob-lbl">Away Win</div>
-                <div class="prob-track"><div id="awayWinProbBar" class="prob-fill fill-away" style="width: 26.0%"></div></div>
-                <div class="prob-val" id="awayWinProbVal">26.0%</div>
+                <div class="prob-track"><div id="awayWinProbBar" class="prob-fill fill-away" style="width: 0%"></div></div>
+                <div class="prob-val" id="awayWinProbVal">--%</div>
               </div>
             </div>
           </div>
@@ -107,9 +115,9 @@
           <div class="metric-box">
             <div class="box-title">Expected Goals (xG)</div>
             <div class="comparison-stat">
-              <span class="num home-num" id="homeXGVal">1.22</span>
+              <span class="num home-num" id="homeXGVal">-.--</span>
               <span style="font-size:0.85rem; color:var(--text-muted)">vs</span>
-              <span class="num away-num" id="awayXGVal">0.80</span>
+              <span class="num away-num" id="awayXGVal">-.--</span>
             </div>
           </div>
 
@@ -117,9 +125,9 @@
           <div class="metric-box">
             <div class="box-title">Predicted Possession Split</div>
             <div class="comparison-stat">
-              <span class="num home-num" id="homePossVal">53%</span>
+              <span class="num home-num" id="homePossVal">--%</span>
               <span style="font-size:0.85rem; color:var(--text-muted)">-</span>
-              <span class="num away-num" id="awayPossVal">47%</span>
+              <span class="num away-num" id="awayPossVal">--%</span>
             </div>
           </div>
 
@@ -127,7 +135,7 @@
           <div class="metric-box">
             <div class="box-title">Most Likely Scoreline</div>
             <div style="font-family:var(--font-heading); font-size:2.2rem; font-weight:800; color:var(--accent-gold); text-align:center; margin-top:6px;" id="predictedScoreline">
-              1 - 0
+              ? - ?
             </div>
           </div>
 
@@ -135,14 +143,8 @@
 
         <!-- Leg 2 & Aggregate Prediction Banner -->
         <div class="metric-box" style="margin-top:24px" id="leg2PredictionBox">
-          <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px">Reverse Leg 2 (Manchester City Home)</div>
-          <div style="display:flex; justify-content:space-between; align-items:center;">
-            <div>Win: <strong>36.6%</strong> | xG: <strong>1.03 - 0.95</strong></div>
-            <div style="color:var(--accent-gold); font-weight:700; font-size:1.2rem;">Score: 1 - 0</div>
-          </div>
-          <div style="margin-top:10px; padding-top:10px; border-top:1px solid var(--border-glass); display:flex; justify-content:space-between; align-items:center">
-            <span class="badge-pill pill-purple">★ 2-LEG AGGREGATE WINNER</span>
-            <strong style="color:var(--primary-cyan); font-size:1.1rem">Arsenal (Arsenal 1 - 1 Manchester City [Tie Pen])</strong>
+          <div style="text-align:center; color:var(--text-muted); font-size:0.9rem">
+            👉 Select any Home Team and Away Team above to generate 2-Leg fixture & aggregate predictions!
           </div>
         </div>
 
@@ -155,17 +157,19 @@
         <div class="card-header">
           <h2 class="card-title">🛡️ Select Premier League Team Squad</h2>
           <div style="width:260px">
-            <select id="squadTeamSelect" class="team-select"></select>
+            <select id="squadTeamSelect" class="team-select">
+              <option value="" disabled selected>-- Select Team --</option>
+            </select>
           </div>
         </div>
 
         <!-- Best Player MVP Banner -->
         <div id="bestPlayerBox" class="best-player-card">
-          <div class="key-badge">90</div>
+          <div class="key-badge">--</div>
           <div class="best-player-details">
             <span class="badge-pill pill-gold">🌟 KEY MAN / TEAM MVP</span>
-            <h3>Saka</h3>
-            <p>Arsenal • Midfielder • Form: 9.0 • Expected Goals: 0.64 xG</p>
+            <h3>Select a Club</h3>
+            <p>Select a Premier League club from the dropdown above to view squad roster & tactical lineup.</p>
           </div>
         </div>
 

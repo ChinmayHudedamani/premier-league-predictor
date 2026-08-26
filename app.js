@@ -20,11 +20,6 @@ async function initApp() {
     renderOwnersGrid();
     renderImprovisationSection();
     
-    // Auto-calculate initial match prediction (Arsenal vs Manchester City)
-    calculateMatchPrediction();
-    
-    // Auto-render Arsenal Squad & FIFA Pitch Formation
-    renderTeamSquadAndPitch('Arsenal');
   } catch (err) {
     console.error('Error loading ui_data.json:', err);
   }
@@ -48,57 +43,77 @@ function setupTabSwitching() {
 function setupPredictorDropdowns() {
   const homeSelect = document.getElementById('homeTeamSelect');
   const awaySelect = document.getElementById('awayTeamSelect');
+  const predictBtn = document.getElementById('predictMatchBtn');
   
   if (!homeSelect || !awaySelect || !uiData) return;
   
-  homeSelect.innerHTML = '';
-  awaySelect.innerHTML = '';
+  homeSelect.innerHTML = '<option value="" disabled selected>-- Select Home Team --</option>';
+  awaySelect.innerHTML = '<option value="" disabled selected>-- Select Away Team --</option>';
   
   uiData.teams.forEach(team => {
     const optH = document.createElement('option');
     optH.value = team;
     optH.textContent = team;
-    if (team === 'Arsenal') optH.selected = true;
     homeSelect.appendChild(optH);
     
     const optA = document.createElement('option');
     optA.value = team;
     optA.textContent = team;
-    if (team === 'Manchester City') optA.selected = true;
     awaySelect.appendChild(optA);
   });
   
-  // FIX MANUAL DROPDOWN CHANGE EVENTS
-  homeSelect.onchange = () => {
+  const handleSelectionChange = () => {
     const homeVal = homeSelect.value;
-    document.getElementById('homeBadgeName').textContent = homeVal;
-    calculateMatchPrediction();
-  };
-  
-  awaySelect.onchange = () => {
     const awayVal = awaySelect.value;
-    document.getElementById('awayBadgeName').textContent = awayVal;
-    calculateMatchPrediction();
+    
+    if (homeVal) {
+      document.getElementById('homeBadgeName').textContent = homeVal;
+    }
+    if (awayVal) {
+      document.getElementById('awayBadgeName').textContent = awayVal;
+    }
+    
+    if (homeVal && awayVal) {
+      calculateMatchPrediction(homeVal, awayVal);
+    }
   };
   
-  document.getElementById('homeBadgeName').textContent = 'Arsenal';
-  document.getElementById('awayBadgeName').textContent = 'Manchester City';
+  homeSelect.onchange = handleSelectionChange;
+  awaySelect.onchange = handleSelectionChange;
+  
+  if (predictBtn) {
+    predictBtn.onclick = () => {
+      const h = homeSelect.value;
+      const a = awaySelect.value;
+      if (!h || !a) {
+        alert("Please select both a Home Team and an Away Team from the dropdowns!");
+        return;
+      }
+      calculateMatchPrediction(h, a);
+    };
+  }
 }
 
-async function calculateMatchPrediction() {
-  const homeSelect = document.getElementById('homeTeamSelect');
-  const awaySelect = document.getElementById('awayTeamSelect');
-  
-  const homeTeam = homeSelect ? homeSelect.value : 'Arsenal';
-  const awayTeam = awaySelect ? awaySelect.value : 'Manchester City';
+async function calculateMatchPrediction(homeTeam, awayTeam) {
+  if (!homeTeam || !awayTeam) return;
   
   if (homeTeam === awayTeam) {
     document.getElementById('predictedScoreline').textContent = 'Invalid Match';
+    const l2Box = document.getElementById('leg2PredictionBox');
+    if (l2Box) {
+      l2Box.innerHTML = `
+        <div style="text-align:center; color:var(--accent-red); font-weight:700; padding:10px">
+          ⚠️ Home Team and Away Team must be different Premier League clubs!
+        </div>
+      `;
+    }
     return;
   }
 
+  // Update Section Headers
+  document.getElementById('leg1HeaderTitle').textContent = `🏟️ LEG 1 MATCH PREDICTION (${homeTeam.toUpperCase()} HOME VENUE)`;
+
   try {
-    // Fetch pre-computed 2-Leg predictions from REST API backend
     const apiRes = await fetch(`/api/predict?home=${encodeURIComponent(homeTeam)}&away=${encodeURIComponent(awayTeam)}`);
     if (apiRes.ok) {
       const pred = await apiRes.json();
@@ -106,16 +121,72 @@ async function calculateMatchPrediction() {
       return;
     }
   } catch (e) {
-    console.warn("Backend API fetch failed, falling back to client-side math:", e);
+    console.warn("Backend API fetch unreachable, running client-side prediction engine:", e);
   }
 
-  // Client-side Fallback Poisson Calculation
+  // Guaranteed Client-Side Poisson Prediction Engine
   const homeStats = uiData.team_stats[homeTeam] || { elo: 1600, attack_rating: 1.0, defence_rating: 1.0 };
   const awayStats = uiData.team_stats[awayTeam] || { elo: 1600, attack_rating: 1.0, defence_rating: 1.0 };
   
-  const lambdaHome = Math.max(0.2, homeStats.attack_rating * awayStats.defence_rating * uiData.home_advantage);
-  const lambdaAway = Math.max(0.2, awayStats.attack_rating * homeStats.defence_rating * 1.05);
+  // Leg 1: homeTeam at Home
+  const l1_home_xg = Math.max(0.2, homeStats.attack_rating * awayStats.defence_rating * uiData.home_advantage);
+  const l1_away_xg = Math.max(0.2, awayStats.attack_rating * homeStats.defence_rating * 1.05);
   
+  const l1_res = runPoissonSimulation(l1_home_xg, l1_away_xg);
+  
+  const eloHomePow = Math.pow(homeStats.elo, 1.25);
+  const eloAwayPow = Math.pow(awayStats.elo, 1.25);
+  const l1_home_poss = Math.round((eloHomePow / (eloHomePow + eloAwayPow)) * 100);
+  const l1_away_poss = 100 - l1_home_poss;
+
+  // Leg 2: awayTeam at Home
+  const l2_home_xg = Math.max(0.2, awayStats.attack_rating * homeStats.defence_rating * uiData.home_advantage);
+  const l2_away_xg = Math.max(0.2, homeStats.attack_rating * awayStats.defence_rating * 1.05);
+  const l2_res = runPoissonSimulation(l2_home_xg, l2_away_xg);
+
+  // Aggregate Calculation
+  const t1_goals = l1_res.likelyHomeG + l2_res.likelyAwayG;
+  const t2_goals = l1_res.likelyAwayG + l2_res.likelyHomeG;
+  
+  let agg_winner = "Tie (Penalties)";
+  if (t1_goals > t2_goals) agg_winner = homeTeam;
+  else if (t2_goals > t1_goals) agg_winner = awayTeam;
+  
+  const clientPred = {
+    home_team: homeTeam,
+    away_team: awayTeam,
+    leg1_home: {
+      venue: `${homeTeam} Stadium (Home)`,
+      home_win_pct: l1_res.pctHome,
+      draw_pct: l1_res.pctDraw,
+      away_win_pct: l1_res.pctAway,
+      home_xg: l1_home_xg.toFixed(2),
+      away_xg: l1_away_xg.toFixed(2),
+      home_poss: l1_home_poss,
+      away_poss: l1_away_poss,
+      predicted_scoreline: `${l1_res.likelyHomeG} - ${l1_res.likelyAwayG}`
+    },
+    leg2_away: {
+      venue: `${awayTeam} Stadium (Home)`,
+      home_win_pct: l2_res.pctHome,
+      draw_pct: l2_res.pctDraw,
+      away_win_pct: l2_res.pctAway,
+      home_xg: l2_home_xg.toFixed(2),
+      away_xg: l2_away_xg.toFixed(2),
+      home_poss: l1_away_poss,
+      away_poss: l1_home_poss,
+      predicted_scoreline: `${l2_res.likelyHomeG} - ${l2_res.likelyAwayG}`
+    },
+    aggregate_2leg: {
+      winner: agg_winner,
+      aggregate_scoreline: `${homeTeam} ${t1_goals} - ${t2_goals} ${awayTeam}`
+    }
+  };
+
+  render2LegPrediction(clientPred);
+}
+
+function runPoissonSimulation(lambdaHome, lambdaAway) {
   const maxGoals = 7;
   const homeProbs = [];
   const awayProbs = [];
@@ -139,16 +210,13 @@ async function calculateMatchPrediction() {
   }
   
   const sumP = pHomeWin + pDraw + pAwayWin;
-  const pctHome = ((pHomeWin / sumP) * 100).toFixed(1);
-  const pctDraw = ((pDraw / sumP) * 100).toFixed(1);
-  const pctAway = ((pAwayWin / sumP) * 100).toFixed(1);
-  
-  const eloHomePow = Math.pow(homeStats.elo, 1.25);
-  const eloAwayPow = Math.pow(awayStats.elo, 1.25);
-  const homePoss = Math.round((eloHomePow / (eloHomePow + eloAwayPow)) * 100);
-  const awayPoss = 100 - homePoss;
-  
-  updateMatchUI(pctHome, pctDraw, pctAway, lambdaHome.toFixed(2), lambdaAway.toFixed(2), homePoss, awayPoss, `${likelyHomeG} - ${likelyAwayG}`);
+  return {
+    pctHome: ((pHomeWin / sumP) * 100).toFixed(1),
+    pctDraw: ((pDraw / sumP) * 100).toFixed(1),
+    pctAway: ((pAwayWin / sumP) * 100).toFixed(1),
+    likelyHomeG: likelyHomeG,
+    likelyAwayG: likelyAwayG
+  };
 }
 
 function render2LegPrediction(pred) {
@@ -161,14 +229,14 @@ function render2LegPrediction(pred) {
   const l2Box = document.getElementById('leg2PredictionBox');
   if (l2Box) {
     l2Box.innerHTML = `
-      <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px">Reverse Leg 2 (${pred.away_team} Home)</div>
-      <div style="display:flex; justify-content:space-between; align-items:center;">
-        <div>Win: <strong>${l2.home_win_pct}%</strong> | xG: <strong>${l2.home_xg} - ${l2.away_xg}</strong></div>
-        <div style="color:var(--accent-gold); font-weight:700; font-size:1.2rem;">Score: ${l2.predicted_scoreline}</div>
+      <div style="font-size:0.85rem; color:var(--text-muted); text-transform:uppercase; margin-bottom:8px">Reverse Leg 2 (${pred.away_team} Home Venue)</div>
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px">
+        <div>Win Prob: <strong>${l2.home_win_pct}%</strong> | Expected Goals: <strong>${l2.home_xg} - ${l2.away_xg}</strong></div>
+        <div style="color:var(--accent-gold); font-weight:700; font-size:1.3rem;">Score: ${l2.predicted_scoreline}</div>
       </div>
-      <div style="margin-top:10px; padding-top:10px; border-top:1px solid var(--border-glass); display:flex; justify-content:space-between; align-items:center">
+      <div style="margin-top:14px; padding-top:12px; border-top:1px solid var(--border-glass); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px">
         <span class="badge-pill pill-purple">★ 2-LEG AGGREGATE WINNER</span>
-        <strong style="color:var(--primary-cyan); font-size:1.1rem">${agg.winner} (${agg.aggregate_scoreline})</strong>
+        <strong style="color:var(--primary-cyan); font-size:1.2rem">${agg.winner} (${agg.aggregate_scoreline})</strong>
       </div>
     `;
   }
@@ -196,12 +264,11 @@ function setupSquadTeamSelect() {
   const squadSelect = document.getElementById('squadTeamSelect');
   if (!squadSelect || !uiData) return;
   
-  squadSelect.innerHTML = '';
+  squadSelect.innerHTML = '<option value="" disabled selected>-- Select Team --</option>';
   uiData.teams.forEach(team => {
     const opt = document.createElement('option');
     opt.value = team;
     opt.textContent = team;
-    if (team === 'Arsenal') opt.selected = true;
     squadSelect.appendChild(opt);
   });
   
